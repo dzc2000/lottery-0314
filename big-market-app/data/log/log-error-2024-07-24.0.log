@@ -1,0 +1,278 @@
+24-07-24.15:49:06.956 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-24.15:49:08.275 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:08.275 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:08.375 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:08.375 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:08.477 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:08.477 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:08.681 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:08.681 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:08.733 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+24-07-24.15:49:08.738 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+24-07-24.15:49:08.743 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+24-07-24.15:49:08.746 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+24-07-24.15:49:08.751 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+24-07-24.15:49:08.755 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+24-07-24.15:49:08.760 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+24-07-24.15:49:08.764 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+24-07-24.15:49:08.768 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+24-07-24.15:49:08.771 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+24-07-24.15:49:08.777 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+24-07-24.15:49:08.779 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+24-07-24.15:49:08.781 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+24-07-24.15:49:08.784 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+24-07-24.15:49:08.789 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+24-07-24.15:49:08.791 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+24-07-24.15:49:08.793 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+24-07-24.15:49:08.795 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+24-07-24.15:49:08.798 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+24-07-24.15:49:08.800 [main            ] WARN  RaffleOrderTest        - 活动未开启（非open状态）
+24-07-24.15:49:09.038 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:09.038 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:09.704 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:09.704 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:10.829 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:10.829 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:11.803 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:11.803 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:12.775 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:12.775 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:13.890 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:13.890 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:14.966 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:14.966 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:16.044 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:16.044 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:17.173 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:17.173 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:17.990 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:17.990 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:18.993 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:18.993 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:20.119 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:20.119 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:21.092 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:21.092 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:22.219 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:22.219 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:23.327 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:23.327 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:24.248 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:24.248 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:25.066 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:25.066 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:26.191 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:26.191 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:27.214 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:27.214 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:28.225 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:28.225 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:29.350 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:29.350 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:30.421 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:30.421 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:31.646 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:31.646 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:32.675 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:32.675 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:33.740 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:33.740 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:34.864 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:34.864 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:35.789 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:35.789 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:36.658 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:36.658 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:37.630 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:37.630 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:38.694 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:38.694 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:39.872 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:39.872 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:41.048 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:41.048 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:42.176 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:42.176 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:42.988 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:42.988 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:43.998 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:43.998 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:44.972 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:44.972 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:46.095 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:46.095 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:47.270 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:47.270 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:48.442 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:48.442 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:49.572 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:49.572 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:50.540 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:50.540 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:51.614 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:51.614 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:52.734 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:52.735 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:53.853 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:53.853 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:54.668 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:54.668 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:55.689 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:55.689 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:56.607 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:56.607 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:57.525 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:57.526 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:58.547 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:58.547 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:49:59.416 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:49:59.416 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:50:00.230 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:50:00.230 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:50:01.304 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:50:01.304 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:50:02.479 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:50:02.479 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:50:03.657 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:50:03.657 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:50:04.527 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:50:04.527 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:50:05.701 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:50:05.701 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:50:06.875 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:50:06.875 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:50:08.101 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:50:08.101 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:50:09.019 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:50:09.019 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:50:09.939 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+24-07-24.15:50:09.939 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-dzc-group-1, groupId=dzc-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+24-07-24.15:55:19.438 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-24.15:55:20.873 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Error while fetching metadata with correlation id 2 : {activity_sku_stock_zero=LEADER_NOT_AVAILABLE}
+24-07-24.15:55:21.353 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:55:21.359 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:55:21.364 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:55:21.370 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:55:21.380 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:55:21.388 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:55:21.394 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:55:21.402 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:55:21.408 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:55:21.413 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:55:21.419 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:55:21.425 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:55:21.429 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:55:21.433 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:55:21.438 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:55:21.446 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:55:21.454 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:55:21.461 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:55:21.466 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:55:21.469 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:57:29.487 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-24.15:57:31.240 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:57:31.242 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:57:31.244 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:57:31.247 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:57:31.251 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:57:31.253 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:57:31.255 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:57:31.257 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:57:31.259 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:57:31.260 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:57:31.262 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:57:31.264 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:57:31.267 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:57:31.269 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:57:31.272 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:57:31.275 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:57:31.277 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:57:31.279 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:57:31.281 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.15:57:31.283 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:01:58.505 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-24.16:03:45.340 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:03:45.384 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:03:45.402 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:03:45.414 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:03:45.425 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:03:45.436 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:03:45.447 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:03:45.464 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:03:45.480 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:05:30.293 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-24.16:05:31.952 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:05:31.954 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:05:31.955 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:05:31.957 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:05:31.960 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:05:31.961 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:05:31.963 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:05:31.965 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:05:31.966 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:05:31.968 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:05:31.970 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:05:31.972 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:05:31.974 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:05:31.976 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:05:31.979 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:05:31.982 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:05:31.986 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:05:31.990 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:05:31.994 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:05:31.997 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:06:45.927 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-24.16:06:47.553 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:06:47.556 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:06:47.559 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:06:47.563 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:06:47.567 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:06:47.570 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:06:47.575 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:06:47.578 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:06:47.579 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:06:47.581 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:06:47.583 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:06:47.585 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:06:47.587 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:06:47.589 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:06:47.592 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:06:47.594 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:06:47.596 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:06:47.598 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:06:47.599 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:06:47.601 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:07:31.150 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-24.16:10:39.310 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-24.16:14:36.162 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=7m33s431ms).
+24-07-24.16:14:36.214 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:14:36.355 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:14:36.357 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:14:36.360 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:14:36.363 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:14:36.367 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:14:36.370 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:15:04.016 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-24.16:15:05.776 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:15:05.781 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:15:05.784 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:15:05.794 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:15:05.814 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:15:05.819 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:15:05.822 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:15:05.827 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:15:05.832 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:15:05.838 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:15:05.843 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:15:05.846 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:15:05.853 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:15:05.859 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:15:05.864 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:15:05.869 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:15:05.874 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:15:05.878 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:15:05.882 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:15:05.894 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+24-07-24.16:15:49.412 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-24.16:17:57.769 [kafka-producer-network-thread | producer-1] ERROR LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='{"data":9011,"id":"59637108599","timestamp":1721808957610}' to topic activity_sku_stock_zero:
+org.apache.kafka.common.errors.TimeoutException: Expiring 1 record(s) for activity_sku_stock_zero-0:120000 ms has passed since batch creation

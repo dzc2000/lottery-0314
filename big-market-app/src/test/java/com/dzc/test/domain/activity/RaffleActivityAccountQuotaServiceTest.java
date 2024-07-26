@@ -1,7 +1,7 @@
 package com.dzc.test.domain.activity;
 
 import com.dzc.domain.activity.model.entity.SkuRechargeEntity;
-import com.dzc.domain.activity.service.IRaffleOrder;
+import com.dzc.domain.activity.service.IRaffleActivityAccountQuotaService;
 import com.dzc.domain.activity.service.armory.IActivityArmory;
 import com.dzc.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
@@ -18,10 +18,11 @@ import java.util.concurrent.CountDownLatch;
 @Slf4j
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class RaffleOrderTest {
+public class RaffleActivityAccountQuotaServiceTest {
+
 
     @Resource
-    private IRaffleOrder raffleOrder;
+    private IRaffleActivityAccountQuotaService raffleActivityAccountQuotaService;
     @Resource
     private IActivityArmory activityArmory;
 
@@ -33,11 +34,11 @@ public class RaffleOrderTest {
     @Test
     public void test_createSkuRechargeOrder_duplicate() {
         SkuRechargeEntity skuRechargeEntity = new SkuRechargeEntity();
-        skuRechargeEntity.setUserId("xiaofuge");
+        skuRechargeEntity.setUserId("dzc");
         skuRechargeEntity.setSku(9011L);
         // outBusinessNo 作为幂等仿重使用，同一个业务单号2次使用会抛出索引冲突 Duplicate entry '700091009111' for key 'uq_out_business_no' 确保唯一性。
-        skuRechargeEntity.setOutBusinessNo("700091009111");
-        String orderId = raffleOrder.createSkuRechargeOrder(skuRechargeEntity);
+        skuRechargeEntity.setOutBusinessNo("700091009119");
+        String orderId = raffleActivityAccountQuotaService.createOrder(skuRechargeEntity);
         log.info("测试结果：{}", orderId);
     }
 
@@ -52,11 +53,11 @@ public class RaffleOrderTest {
         for (int i = 0; i < 20; i++) {
             try {
                 SkuRechargeEntity skuRechargeEntity = new SkuRechargeEntity();
-                skuRechargeEntity.setUserId("xiaofuge");
+                skuRechargeEntity.setUserId("dzc");
                 skuRechargeEntity.setSku(9011L);
                 // outBusinessNo 作为幂等仿重使用，同一个业务单号2次使用会抛出索引冲突 Duplicate entry '700091009111' for key 'uq_out_business_no' 确保唯一性。
                 skuRechargeEntity.setOutBusinessNo(RandomStringUtils.randomNumeric(12));
-                String orderId = raffleOrder.createSkuRechargeOrder(skuRechargeEntity);
+                String orderId = raffleActivityAccountQuotaService.createOrder(skuRechargeEntity);
                 log.info("测试结果：{}", orderId);
             } catch (AppException e) {
                 log.warn(e.getInfo());
@@ -67,5 +68,3 @@ public class RaffleOrderTest {
     }
 
 }
-
-

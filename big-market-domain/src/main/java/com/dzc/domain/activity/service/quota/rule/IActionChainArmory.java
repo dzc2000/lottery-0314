@@ -1,4 +1,4 @@
-package com.dzc.domain.activity.service.rule;
+package com.dzc.domain.activity.service.quota.rule;
 
 public interface IActionChainArmory {
 

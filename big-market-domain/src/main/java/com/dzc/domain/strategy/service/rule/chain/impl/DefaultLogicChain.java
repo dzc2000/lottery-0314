@@ -4,12 +4,15 @@ import com.dzc.domain.strategy.service.armory.IStrategyDispatch;
 import com.dzc.domain.strategy.service.rule.chain.AbstractLogicChain;
 import com.dzc.domain.strategy.service.rule.chain.factory.DefaultChainFactory;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 
 @Slf4j
 @Component("rule_default")
+@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class DefaultLogicChain extends AbstractLogicChain {
 
     @Resource

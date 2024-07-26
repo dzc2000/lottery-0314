@@ -1,10 +1,8 @@
 package com.dzc.domain.activity.service;
 
-import com.dzc.domain.activity.model.entity.ActivityOrderEntity;
-import com.dzc.domain.activity.model.entity.ActivityShopCartEntity;
 import com.dzc.domain.activity.model.entity.SkuRechargeEntity;
 
-public interface IRaffleOrder {
+public interface IRaffleActivityAccountQuotaService {
 
     /**
      * 创建 sku 账户充值订单，给用户增加抽奖次数
@@ -16,6 +14,6 @@ public interface IRaffleOrder {
      * @return 活动ID
      */
 
-    String createSkuRechargeOrder(SkuRechargeEntity skuRechargeEntity);
+    String createOrder(SkuRechargeEntity skuRechargeEntity);
 
 }

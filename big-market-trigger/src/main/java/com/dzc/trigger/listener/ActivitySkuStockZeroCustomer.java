@@ -2,7 +2,7 @@ package com.dzc.trigger.listener;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
-import com.dzc.domain.activity.service.ISkuStock;
+import com.dzc.domain.activity.service.IRaffleActivitySkuStockService;
 import com.dzc.types.event.BaseEvent;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
@@ -25,7 +25,7 @@ import java.util.Optional;
 public class ActivitySkuStockZeroCustomer {
 
     @Resource
-    private ISkuStock skuStock;
+    private IRaffleActivitySkuStockService skuStock;
 
     @KafkaListener(topics = "${kafka.topic.user}", groupId = "${kafka.topic.group}", concurrency = "1")
     public void listener(ConsumerRecord<?, ?> record, Acknowledgment ack, @Header(KafkaHeaders.RECEIVED_TOPIC) String topic) {

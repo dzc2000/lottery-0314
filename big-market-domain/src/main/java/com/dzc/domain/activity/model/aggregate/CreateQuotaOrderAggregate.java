@@ -1,6 +1,5 @@
 package com.dzc.domain.activity.model.aggregate;
 
-import com.dzc.domain.activity.model.entity.ActivityAccountEntity;
 import com.dzc.domain.activity.model.entity.ActivityOrderEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class CreateOrderAggregate {
+public class CreateQuotaOrderAggregate {
 
     /**
      * 用户ID

@@ -32,7 +32,7 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
         // 2 缓存奖品库存【用于decr扣减库存使用】
         for(StrategyAwardEntity strategyAwardEntity : strategyAwardEntities) {
             Integer awardId = strategyAwardEntity.getAwardId();
-            Integer awardCount = strategyAwardEntity.getAwardCount();
+            Integer awardCount = strategyAwardEntity.getAwardCountSurplus();
 
             cacheStrategyAwardCount(strategyId, awardId, awardCount);
         }
@@ -77,7 +77,7 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
             Integer awardId = strategyAward.getAwardId();
             BigDecimal awardRate = strategyAward.getAwardRate();
             // 计算出每个概率值需要存放到查找表的数量，循环填充
-            for (int i = 0; i < rateRange.multiply(awardRate).setScale(0, RoundingMode.CEILING).intValue(); i++) {
+            for (int i = 0; i < rateRange.multiply(awardRate).intValue(); i++) {
                 strategyAwardSearchRateTables.add(awardId);
             }
         }
@@ -99,6 +99,8 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
      * 转换计算，只根据小数位来计算。如【0.01返回100】、【0.009返回1000】、【0.0018返回10000】
      */
     private double convert(double min){
+        if(0 == min) return 1D;
+
         double current = min;
         double max = 1;
         while (current < 1){
@@ -139,6 +141,7 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
         // 分布式部署下，不一定为当前应用做的策略装配。也就是值不一定会保存到本应用，而是分布式应用，所以需要从 Redis 中获取。
         int rateRange = repository.getRateRange(key);
         // 通过生成的随机值，获取概率值奖品查找表的结果
-        return repository.getStrategyAwardAssemble(key, new SecureRandom().nextInt(rateRange));
+        return repository.getStrategyAwardAssemble(key, secureRandom.nextInt(rateRange));
+
     }
 }

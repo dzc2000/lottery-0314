@@ -1,17 +1,17 @@
-package com.dzc.domain.activity.service;
+package com.dzc.domain.activity.service.quota;
 
 import com.dzc.domain.activity.model.entity.ActivityCountEntity;
 import com.dzc.domain.activity.model.entity.ActivityEntity;
 import com.dzc.domain.activity.model.entity.ActivitySkuEntity;
 import com.dzc.domain.activity.repository.IActivityRepository;
-import com.dzc.domain.activity.service.rule.factory.DefaultActivityChainFactory;
+import com.dzc.domain.activity.service.quota.rule.factory.DefaultActivityChainFactory;
 
-public class RaffleActivitySupport {
+public class RaffleActivityAccountQuotaSupport {
     protected DefaultActivityChainFactory defaultActivityChainFactory;
 
     protected IActivityRepository activityRepository;
 
-    public RaffleActivitySupport(IActivityRepository activityRepository, DefaultActivityChainFactory defaultActivityChainFactory) {
+    public RaffleActivityAccountQuotaSupport(IActivityRepository activityRepository, DefaultActivityChainFactory defaultActivityChainFactory) {
         this.activityRepository = activityRepository;
         this.defaultActivityChainFactory = defaultActivityChainFactory;
     }

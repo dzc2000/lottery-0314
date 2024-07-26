@@ -1,10 +1,10 @@
-package com.dzc.domain.activity.service.rule.impl;
+package com.dzc.domain.activity.service.quota.rule.impl;
 
 import com.dzc.domain.activity.model.entity.ActivityCountEntity;
 import com.dzc.domain.activity.model.entity.ActivityEntity;
 import com.dzc.domain.activity.model.entity.ActivitySkuEntity;
 import com.dzc.domain.activity.model.valobj.ActivityStateVO;
-import com.dzc.domain.activity.service.rule.AbstractActionChain;
+import com.dzc.domain.activity.service.quota.rule.AbstractActionChain;
 import com.dzc.types.enums.ResponseCode;
 import com.dzc.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;

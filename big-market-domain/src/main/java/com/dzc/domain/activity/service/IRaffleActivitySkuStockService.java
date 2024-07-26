@@ -2,7 +2,7 @@ package com.dzc.domain.activity.service;
 
 import com.dzc.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 
-public interface ISkuStock {
+public interface IRaffleActivitySkuStockService {
 
     /**
      * 获取活动sku库存消耗队列
