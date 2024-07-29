@@ -27,7 +27,7 @@ public class ActivitySkuStockZeroCustomer {
     @Resource
     private IRaffleActivitySkuStockService skuStock;
 
-    @KafkaListener(topics = "${kafka.topic.user}", groupId = "${kafka.topic.group}", concurrency = "1")
+    @KafkaListener(topics = "${kafka.topic.activity_sku_stock_zero}", groupId = "${kafka.topic.group}", concurrency = "1")
     public void listener(ConsumerRecord<?, ?> record, Acknowledgment ack, @Header(KafkaHeaders.RECEIVED_TOPIC) String topic) {
         Optional<?> message = Optional.ofNullable(record.value());
         if (message.isPresent()) {

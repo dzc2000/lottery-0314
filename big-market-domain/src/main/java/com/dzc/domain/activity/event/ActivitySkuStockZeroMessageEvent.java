@@ -10,7 +10,7 @@ import java.util.Date;
 @Component
 public class ActivitySkuStockZeroMessageEvent extends BaseEvent<Long> {
 
-    @Value("${kafka.topic.user}")
+    @Value("${kafka.topic.activity_sku_stock_zero}")
     private String topic;
 
     @Override

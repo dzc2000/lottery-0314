@@ -145,7 +145,8 @@ spring:
 kafka:
   topic:
     group: raffle-group
-    user: activity_sku_stock_zero
+    activity_sku_stock_zero: activity_sku_stock_zero
+    send_award:  send_award
 
 # 日志
 logging:
