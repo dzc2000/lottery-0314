@@ -60,6 +60,13 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
         return true;
     }
 
+    @Override
+    public boolean assembleLotteryStrategyByActivityId(Long activityId) {
+        Long strategyId = repository.queryStrategyIdByActivityId(activityId);
+        return assembleLotteryStrategy(strategyId);
+    }
+
+
     private void assembleLotteryStrategy(String key, List<StrategyAwardEntity> strategyAwardEntities){
         // 1. 获取最小概率值
         BigDecimal minAwardRate = strategyAwardEntities.stream()
@@ -131,9 +138,9 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
     }
 
     @Override
-    public Boolean subtractionAwardStock(Long strategyId, Integer awardId) {
+    public Boolean subtractionAwardStock(Long strategyId, Integer awardId, Date endDateTime) {
         String cacheKey = Constants.RedisKey.STRATEGY_AWARD_COUNT_KEY + strategyId + Constants.UNDERLINE + awardId;
-        return repository.subtractionAwardStock(cacheKey);
+        return repository.subtractionAwardStock(cacheKey, endDateTime);
     }
 
     @Override

@@ -1,0 +1,1006 @@
+24-07-29.15:55:10.340 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-29.15:55:17.056 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 2147483646 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:55:22.154 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:55:22.154 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 2147483646 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:55:27.209 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:55:32.269 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:55:32.296 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:55:37.430 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:55:42.495 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:55:42.502 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:55:47.819 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:55:53.051 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:55:53.051 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:55:58.868 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:56:02.444 [http-nio-8091-exec-3] ERROR RaffleActivityController - 活动抽奖失败 userId:dzc activityId:100301
+org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: Unknown system variable 'total_count_surplus'
+### The error may exist in file [/Users/dongzhicheng/Desktop/Project/big-market/big-market-app/target/classes/mybatis/mapper/raffle_activity_account_mapper.xml]
+### The error may involve com.dzc.infrastructure.persistent.dao.IRaffleActivityAccountDao.updateActivityAccountSubtractionQuota-Inline
+### The error occurred while setting parameters
+### SQL: set total_count_surplus = total_count_surplus - 1, update_time = now()         where user_id = ? and activity_id = ? and total_count_surplus > 0
+### Cause: java.sql.SQLException: Unknown system variable 'total_count_surplus'
+; uncategorized SQLException; SQL state [HY000]; error code [1193]; Unknown system variable 'total_count_surplus'; nested exception is java.sql.SQLException: Unknown system variable 'total_count_surplus'
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:92)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at jdk.proxy2/jdk.proxy2.$Proxy108.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:288)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy114.updateActivityAccountSubtractionQuota(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
+	at jdk.proxy2/jdk.proxy2.$Proxy115.updateActivityAccountSubtractionQuota(Unknown Source)
+	at com.dzc.infrastructure.persistent.repository.ActivityRepository.lambda$saveCreatePartakeOrderAggregate$1(ActivityRepository.java:336)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at com.dzc.infrastructure.persistent.repository.ActivityRepository.saveCreatePartakeOrderAggregate(ActivityRepository.java:333)
+	at com.dzc.infrastructure.persistent.repository.ActivityRepository$$FastClassBySpringCGLIB$$96d8e483.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.dzc.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$957629a5.saveCreatePartakeOrderAggregate(<generated>)
+	at com.dzc.domain.activity.service.partake.AbstractRaffleActivityPartake.createOrder(AbstractRaffleActivityPartake.java:70)
+	at com.dzc.domain.activity.service.partake.AbstractRaffleActivityPartake.createOrder(AbstractRaffleActivityPartake.java:28)
+	at com.dzc.trigger.http.RaffleActivityController.draw(RaffleActivityController.java:107)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.sql.SQLException: Unknown system variable 'total_count_surplus'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at jdk.proxy2/jdk.proxy2.$Proxy176.update(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 87 common frames omitted
+24-07-29.15:56:03.915 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:56:03.926 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:56:09.887 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:56:15.056 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:56:15.056 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:56:21.079 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:56:26.114 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:56:26.124 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:56:32.226 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:56:38.169 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:56:38.169 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:56:44.051 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:56:49.365 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:56:49.371 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:56:55.437 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:57:00.547 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:57:00.550 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:57:05.681 [http-nio-8091-exec-6] ERROR RaffleActivityController - 活动抽奖失败 userId:dzc activityId:100301
+org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: Unknown system variable 'total_count_surplus'
+### The error may exist in file [/Users/dongzhicheng/Desktop/Project/big-market/big-market-app/target/classes/mybatis/mapper/raffle_activity_account_mapper.xml]
+### The error may involve com.dzc.infrastructure.persistent.dao.IRaffleActivityAccountDao.updateActivityAccountSubtractionQuota-Inline
+### The error occurred while setting parameters
+### SQL: set total_count_surplus = total_count_surplus - 1, update_time = now()         where user_id = ? and activity_id = ? and total_count_surplus > 0
+### Cause: java.sql.SQLException: Unknown system variable 'total_count_surplus'
+; uncategorized SQLException; SQL state [HY000]; error code [1193]; Unknown system variable 'total_count_surplus'; nested exception is java.sql.SQLException: Unknown system variable 'total_count_surplus'
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:92)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at jdk.proxy2/jdk.proxy2.$Proxy108.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:288)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy114.updateActivityAccountSubtractionQuota(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
+	at jdk.proxy2/jdk.proxy2.$Proxy115.updateActivityAccountSubtractionQuota(Unknown Source)
+	at com.dzc.infrastructure.persistent.repository.ActivityRepository.lambda$saveCreatePartakeOrderAggregate$1(ActivityRepository.java:336)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at com.dzc.infrastructure.persistent.repository.ActivityRepository.saveCreatePartakeOrderAggregate(ActivityRepository.java:333)
+	at com.dzc.infrastructure.persistent.repository.ActivityRepository$$FastClassBySpringCGLIB$$96d8e483.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.dzc.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$957629a5.saveCreatePartakeOrderAggregate(<generated>)
+	at com.dzc.domain.activity.service.partake.AbstractRaffleActivityPartake.createOrder(AbstractRaffleActivityPartake.java:70)
+	at com.dzc.domain.activity.service.partake.AbstractRaffleActivityPartake.createOrder(AbstractRaffleActivityPartake.java:28)
+	at com.dzc.trigger.http.RaffleActivityController.draw(RaffleActivityController.java:107)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.sql.SQLException: Unknown system variable 'total_count_surplus'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at jdk.proxy2/jdk.proxy2.$Proxy176.update(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 87 common frames omitted
+24-07-29.15:57:25.591 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:57:25.592 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:57:31.681 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:57:37.560 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.15:57:37.560 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:06:08.869 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-29.16:06:15.280 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 2147483646 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:06:25.333 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:06:25.333 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:06:26.322 [http-nio-8091-exec-2] ERROR RaffleActivityController - 活动抽奖失败 userId:dzc activityId:100301
+org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: Unknown system variable 'total_count_surplus'
+### The error may exist in file [/Users/dongzhicheng/Desktop/Project/big-market/big-market-app/target/classes/mybatis/mapper/raffle_activity_account_mapper.xml]
+### The error may involve com.dzc.infrastructure.persistent.dao.IRaffleActivityAccountDao.updateActivityAccountSubtractionQuota-Inline
+### The error occurred while setting parameters
+### SQL: set total_count_surplus = total_count_surplus - 1, update_time = now()         where user_id = ? and activity_id = ? and total_count_surplus > 0
+### Cause: java.sql.SQLException: Unknown system variable 'total_count_surplus'
+; uncategorized SQLException; SQL state [HY000]; error code [1193]; Unknown system variable 'total_count_surplus'; nested exception is java.sql.SQLException: Unknown system variable 'total_count_surplus'
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:92)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at jdk.proxy2/jdk.proxy2.$Proxy108.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:288)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy114.updateActivityAccountSubtractionQuota(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
+	at jdk.proxy2/jdk.proxy2.$Proxy115.updateActivityAccountSubtractionQuota(Unknown Source)
+	at com.dzc.infrastructure.persistent.repository.ActivityRepository.lambda$saveCreatePartakeOrderAggregate$1(ActivityRepository.java:336)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at com.dzc.infrastructure.persistent.repository.ActivityRepository.saveCreatePartakeOrderAggregate(ActivityRepository.java:333)
+	at com.dzc.infrastructure.persistent.repository.ActivityRepository$$FastClassBySpringCGLIB$$96d8e483.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.dzc.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$bc08402d.saveCreatePartakeOrderAggregate(<generated>)
+	at com.dzc.domain.activity.service.partake.AbstractRaffleActivityPartake.createOrder(AbstractRaffleActivityPartake.java:70)
+	at com.dzc.domain.activity.service.partake.AbstractRaffleActivityPartake.createOrder(AbstractRaffleActivityPartake.java:28)
+	at com.dzc.trigger.http.RaffleActivityController.draw(RaffleActivityController.java:107)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.sql.SQLException: Unknown system variable 'total_count_surplus'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at jdk.proxy2/jdk.proxy2.$Proxy170.update(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 87 common frames omitted
+24-07-29.16:06:30.483 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:06:35.643 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:06:35.644 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:06:40.855 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:06:45.893 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:06:45.893 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:06:51.342 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:06:56.397 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:06:56.407 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:07:02.363 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:07:07.457 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:07:07.464 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:07:13.437 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:07:18.553 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:07:23.599 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:07:29.629 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:07:29.644 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:07:54.564 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:07:54.564 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:08:05.764 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:08:11.674 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:08:11.686 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:08:17.649 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:08:22.746 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:08:27.907 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:08:33.748 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:08:33.762 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:08:39.777 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:08:45.015 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:08:45.022 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:08:50.924 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:08:56.102 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:08:56.102 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:09:02.032 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:09:07.132 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:09:07.132 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:09:13.108 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:09:19.069 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:09:19.069 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:09:25.253 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:09:30.287 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:09:35.413 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:09:41.242 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:09:41.255 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:09:47.169 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:09:52.405 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:09:52.413 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:09:58.586 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:10:03.619 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:10:08.743 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:10:13.794 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:10:19.665 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:10:19.665 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:10:25.733 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:10:38.701 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:10:44.613 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:10:44.613 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:10:50.570 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:10:55.658 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:10:55.658 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:11:01.636 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:11:12.600 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:11:12.600 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:11:18.526 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:11:23.806 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:11:23.817 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:11:29.898 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:11:35.007 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:11:35.014 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:11:41.116 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:11:46.224 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:11:51.387 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:11:57.307 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:11:57.307 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:12:03.426 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:12:08.470 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:12:13.538 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:12:18.672 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:12:24.483 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:12:24.483 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:12:47.189 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:12:47.189 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:12:55.184 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:12:57.648 [http-nio-8091-exec-6] ERROR RaffleActivityController - 活动抽奖失败 userId:dzc activityId:100301
+org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: Unknown system variable 'total_count_surplus'
+### The error may exist in file [/Users/dongzhicheng/Desktop/Project/big-market/big-market-app/target/classes/mybatis/mapper/raffle_activity_account_mapper.xml]
+### The error may involve com.dzc.infrastructure.persistent.dao.IRaffleActivityAccountDao.updateActivityAccountSubtractionQuota-Inline
+### The error occurred while setting parameters
+### SQL: set total_count_surplus = total_count_surplus - 1, update_time = now()         where user_id = ? and activity_id = ? and total_count_surplus > 0
+### Cause: java.sql.SQLException: Unknown system variable 'total_count_surplus'
+; uncategorized SQLException; SQL state [HY000]; error code [1193]; Unknown system variable 'total_count_surplus'; nested exception is java.sql.SQLException: Unknown system variable 'total_count_surplus'
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:92)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at jdk.proxy2/jdk.proxy2.$Proxy108.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:288)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy114.updateActivityAccountSubtractionQuota(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
+	at jdk.proxy2/jdk.proxy2.$Proxy115.updateActivityAccountSubtractionQuota(Unknown Source)
+	at com.dzc.infrastructure.persistent.repository.ActivityRepository.lambda$saveCreatePartakeOrderAggregate$1(ActivityRepository.java:336)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at com.dzc.infrastructure.persistent.repository.ActivityRepository.saveCreatePartakeOrderAggregate(ActivityRepository.java:333)
+	at com.dzc.infrastructure.persistent.repository.ActivityRepository$$FastClassBySpringCGLIB$$96d8e483.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.dzc.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$bc08402d.saveCreatePartakeOrderAggregate(<generated>)
+	at com.dzc.domain.activity.service.partake.AbstractRaffleActivityPartake.createOrder(AbstractRaffleActivityPartake.java:70)
+	at com.dzc.domain.activity.service.partake.AbstractRaffleActivityPartake.createOrder(AbstractRaffleActivityPartake.java:28)
+	at com.dzc.trigger.http.RaffleActivityController.draw(RaffleActivityController.java:107)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.sql.SQLException: Unknown system variable 'total_count_surplus'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at jdk.proxy2/jdk.proxy2.$Proxy170.update(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 87 common frames omitted
+24-07-29.16:13:29.060 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-29.16:13:35.289 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 2147483646 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:15:30.242 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=1m59s609ms).
+24-07-29.16:15:30.243 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=1m59s634ms).
+24-07-29.16:15:37.870 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:15:38.134 [http-nio-8091-exec-2] ERROR RaffleActivityController - 活动抽奖失败 userId:dzc activityId:100301
+org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: Unknown system variable 'total_count_surplus'
+### The error may exist in file [/Users/dongzhicheng/Desktop/Project/big-market/big-market-app/target/classes/mybatis/mapper/raffle_activity_account_mapper.xml]
+### The error may involve com.dzc.infrastructure.persistent.dao.IRaffleActivityAccountDao.updateActivityAccountSubtractionQuota-Inline
+### The error occurred while setting parameters
+### SQL: set total_count_surplus = total_count_surplus - 1, update_time = now()         where user_id = ? and activity_id = ? and total_count_surplus > 0
+### Cause: java.sql.SQLException: Unknown system variable 'total_count_surplus'
+; uncategorized SQLException; SQL state [HY000]; error code [1193]; Unknown system variable 'total_count_surplus'; nested exception is java.sql.SQLException: Unknown system variable 'total_count_surplus'
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:92)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at jdk.proxy2/jdk.proxy2.$Proxy108.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:288)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy114.updateActivityAccountSubtractionQuota(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
+	at jdk.proxy2/jdk.proxy2.$Proxy115.updateActivityAccountSubtractionQuota(Unknown Source)
+	at com.dzc.infrastructure.persistent.repository.ActivityRepository.lambda$saveCreatePartakeOrderAggregate$1(ActivityRepository.java:336)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at com.dzc.infrastructure.persistent.repository.ActivityRepository.saveCreatePartakeOrderAggregate(ActivityRepository.java:333)
+	at com.dzc.infrastructure.persistent.repository.ActivityRepository$$FastClassBySpringCGLIB$$96d8e483.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.dzc.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$bc08402d.saveCreatePartakeOrderAggregate(<generated>)
+	at com.dzc.domain.activity.service.partake.AbstractRaffleActivityPartake.createOrder(AbstractRaffleActivityPartake.java:70)
+	at com.dzc.domain.activity.service.partake.AbstractRaffleActivityPartake.createOrder(AbstractRaffleActivityPartake.java:28)
+	at com.dzc.trigger.http.RaffleActivityController.draw(RaffleActivityController.java:107)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.sql.SQLException: Unknown system variable 'total_count_surplus'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at jdk.proxy2/jdk.proxy2.$Proxy170.update(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 87 common frames omitted
+24-07-29.16:15:47.911 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:15:47.914 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:15:53.061 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:15:58.453 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:15:58.453 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:16:03.707 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:16:09.118 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:16:09.118 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:16:14.948 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:16:20.337 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:16:20.346 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:16:26.306 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:16:31.404 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:16:31.404 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:16:37.310 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:16:42.609 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:16:42.621 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:16:48.831 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:16:53.873 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:16:53.882 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:17:00.067 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:17:05.133 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:17:10.315 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:17:16.044 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:17:16.051 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:17:21.964 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:17:26.982 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:17:26.992 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:17:33.260 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:17:39.488 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:17:39.488 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:17:45.465 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:17:50.504 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:17:50.504 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:17:56.361 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:18:01.621 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:18:01.628 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:18:07.861 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:18:12.890 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:18:18.020 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:18:23.926 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:18:23.926 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:18:29.839 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:18:35.144 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:18:35.155 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:18:41.075 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:18:46.240 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:18:46.251 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:18:57.277 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:19:03.339 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:19:03.339 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:19:09.259 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:19:14.422 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:19:14.434 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:19:20.355 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:19:25.590 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:19:25.591 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:19:31.689 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:19:36.751 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:19:41.924 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:19:46.964 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:19:52.826 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:19:52.838 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:19:58.914 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:20:04.064 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:20:04.064 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:20:09.986 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:20:15.023 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:20:15.035 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:20:21.139 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:20:26.185 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:20:26.195 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:20:32.160 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:20:37.296 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:20:37.307 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:20:40.955 [http-nio-8091-exec-5] ERROR RaffleActivityController - 活动抽奖失败 userId:dzc activityId:100301
+org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: Unknown system variable 'total_count_surplus'
+### The error may exist in file [/Users/dongzhicheng/Desktop/Project/big-market/big-market-app/target/classes/mybatis/mapper/raffle_activity_account_mapper.xml]
+### The error may involve com.dzc.infrastructure.persistent.dao.IRaffleActivityAccountDao.updateActivityAccountSubtractionQuota-Inline
+### The error occurred while setting parameters
+### SQL: set total_count_surplus = total_count_surplus - 1, update_time = now()         where user_id = ? and activity_id = ? and total_count_surplus > 0
+### Cause: java.sql.SQLException: Unknown system variable 'total_count_surplus'
+; uncategorized SQLException; SQL state [HY000]; error code [1193]; Unknown system variable 'total_count_surplus'; nested exception is java.sql.SQLException: Unknown system variable 'total_count_surplus'
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:92)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at jdk.proxy2/jdk.proxy2.$Proxy108.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:288)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy114.updateActivityAccountSubtractionQuota(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
+	at jdk.proxy2/jdk.proxy2.$Proxy115.updateActivityAccountSubtractionQuota(Unknown Source)
+	at com.dzc.infrastructure.persistent.repository.ActivityRepository.lambda$saveCreatePartakeOrderAggregate$1(ActivityRepository.java:336)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at com.dzc.infrastructure.persistent.repository.ActivityRepository.saveCreatePartakeOrderAggregate(ActivityRepository.java:333)
+	at com.dzc.infrastructure.persistent.repository.ActivityRepository$$FastClassBySpringCGLIB$$96d8e483.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.dzc.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$bc08402d.saveCreatePartakeOrderAggregate(<generated>)
+	at com.dzc.domain.activity.service.partake.AbstractRaffleActivityPartake.createOrder(AbstractRaffleActivityPartake.java:70)
+	at com.dzc.domain.activity.service.partake.AbstractRaffleActivityPartake.createOrder(AbstractRaffleActivityPartake.java:28)
+	at com.dzc.trigger.http.RaffleActivityController.draw(RaffleActivityController.java:107)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.sql.SQLException: Unknown system variable 'total_count_surplus'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at jdk.proxy2/jdk.proxy2.$Proxy170.update(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 87 common frames omitted
+24-07-29.16:20:43.161 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:20:48.499 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:20:48.508 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:20:54.474 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:20:59.506 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:20:59.506 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:21:05.430 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:21:10.626 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:21:10.626 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:21:16.731 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:21:22.883 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:21:22.884 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:21:28.831 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:21:33.893 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:21:38.984 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:21:44.891 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:21:44.897 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:21:51.105 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:21:57.159 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:21:57.159 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:22:03.135 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:22:08.344 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:22:08.345 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:22:14.419 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:22:19.522 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:22:19.522 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:22:25.488 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:22:31.344 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:22:31.344 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:22:37.205 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:22:42.251 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:22:47.439 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:22:53.401 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:22:53.401 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:22:59.510 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:23:04.632 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:23:04.633 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:23:10.657 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:23:16.661 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:23:16.661 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:23:22.577 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:23:27.646 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:23:32.715 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:23:37.779 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:23:42.885 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:23:48.877 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:23:54.138 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:24:00.269 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:24:00.280 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:24:06.262 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:24:11.478 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:24:11.478 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:24:17.384 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:24:22.555 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:24:22.556 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:24:28.769 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:24:33.809 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:24:33.820 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-29.16:24:39.774 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.

@@ -2,18 +2,13 @@ package com.dzc.trigger.api;
 
 import com.dzc.trigger.api.dto.RaffleAwardListRequestDTO;
 import com.dzc.trigger.api.dto.RaffleAwardListResponseDTO;
-import com.dzc.trigger.api.dto.RaffleRequestDTO;
-import com.dzc.trigger.api.dto.RaffleResponseDTO;
+import com.dzc.trigger.api.dto.RaffleStrategyRequestDTO;
+import com.dzc.trigger.api.dto.RaffleStrategyResponseDTO;
 import com.dzc.types.model.Response;
 
 import java.util.List;
 
-/**
- * @author Fuzhengwei bugstack.cn @小傅哥
- * @description 抽奖服务接口
- * @create 2024-02-14 09:33
- */
-public interface IRaffleService {
+public interface IRaffleStrategyService {
 
     /**
      * 策略装配接口
@@ -37,6 +32,6 @@ public interface IRaffleService {
      * @param requestDTO 请求参数
      * @return 抽奖结果
      */
-    Response<RaffleResponseDTO> randomRaffle(RaffleRequestDTO requestDTO);
+    Response<RaffleStrategyResponseDTO> randomRaffle(RaffleStrategyRequestDTO requestDTO);
 
 }

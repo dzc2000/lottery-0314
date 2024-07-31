@@ -16,10 +16,7 @@ import org.redisson.api.RDelayedQueue;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 import static com.dzc.types.enums.ResponseCode.UN_ASSEMBLED_STRATEGY_ARMORY;
@@ -28,11 +25,15 @@ import static com.dzc.types.enums.ResponseCode.UN_ASSEMBLED_STRATEGY_ARMORY;
 @Slf4j
 public class StrategyRepository implements IStrategyRepository {
     @Resource
+    private IRaffleActivityDao raffleActivityDao;
+    @Resource
     private IStrategyDao strategyDao;
     @Resource
     private IStrategyRuleDao strategyRuleDao;
     @Resource
     private IStrategyAwardDao strategyAwardDao;
+    @Resource
+    private IRaffleActivityAccountDayDao raffleActivityAccountDayDao;
     @Resource
     private IRedisService redisService;
     @Resource
@@ -61,6 +62,8 @@ public class StrategyRepository implements IStrategyRepository {
                     .awardCount(strategyAward.getAwardCount())
                     .awardCountSurplus(strategyAward.getAwardCountSurplus())
                     .awardRate(strategyAward.getAwardRate())
+                    .sort(strategyAward.getSort())
+                    .ruleModels(strategyAward.getRuleModels())
                     .build();
             strategyAwardEntities.add(strategyAwardEntity);
         }
@@ -219,6 +222,12 @@ public class StrategyRepository implements IStrategyRepository {
 
     @Override
     public Boolean subtractionAwardStock(String cacheKey) {
+        return subtractionAwardStock(cacheKey, null);
+    }
+
+
+    @Override
+    public Boolean subtractionAwardStock(String cacheKey, Date endDateTime) {
         long surplus = redisService.getAtomicLong(cacheKey);
         if(surplus<0){
             redisService.setValue(cacheKey, 0L);
@@ -226,7 +235,13 @@ public class StrategyRepository implements IStrategyRepository {
         }
 
         String lockKey = cacheKey + Constants.UNDERLINE+surplus;
-        Boolean lock = redisService.setNx(lockKey);
+        Boolean lock = false;
+        if (null != endDateTime) {
+            long expireMillis = endDateTime.getTime() - System.currentTimeMillis() + TimeUnit.DAYS.toMillis(1);
+            lock = redisService.setNx(lockKey, expireMillis, TimeUnit.MILLISECONDS);
+        } else {
+            lock = redisService.setNx(lockKey);
+        }
         if(!lock){
             log.info("策略奖品库存加锁失败 {}", lockKey);
         }
@@ -283,5 +298,38 @@ public class StrategyRepository implements IStrategyRepository {
         redisService.setValue(cacheKey, strategyAwardEntity);
         // 返回数据
         return strategyAwardEntity;
+    }
+
+    @Override
+    public Long queryStrategyIdByActivityId(Long activityId) {
+        return raffleActivityDao.queryStrategyIdByActivityId(activityId);
+    }
+
+    @Override
+    public Integer queryTodayUserRaffleCount(String userId, Long strategyId) {
+        // 活动ID
+        Long activityId = raffleActivityDao.queryActivityIdByStrategyId(strategyId);
+        // 封装参数
+        RaffleActivityAccountDay raffleActivityAccountDayReq = new RaffleActivityAccountDay();
+        raffleActivityAccountDayReq.setUserId(userId);
+        raffleActivityAccountDayReq.setActivityId(activityId);
+        raffleActivityAccountDayReq.setDay(raffleActivityAccountDayReq.currentDay());
+        RaffleActivityAccountDay raffleActivityAccountDay = raffleActivityAccountDayDao.queryActivityAccountDayByUserId(raffleActivityAccountDayReq);
+        if (null == raffleActivityAccountDay) return 0;
+        // 总次数 - 剩余的，等于今日参与的
+        return raffleActivityAccountDay.getDayCount() - raffleActivityAccountDay.getDayCountSurplus();
+    }
+
+    @Override
+    public Map<String, Integer> queryAwardRuleLockCount(String[] treeIds) {
+        if (null == treeIds || treeIds.length == 0) return new HashMap<>();
+        List<RuleTreeNode> ruleTreeNodes = ruleTreeNodeDao.queryRuleLocks(treeIds);
+        Map<String, Integer> resultMap = new HashMap<>();
+        for (RuleTreeNode node : ruleTreeNodes) {
+            String treeId = node.getTreeId();
+            Integer ruleValue = Integer.valueOf(node.getRuleValue());
+            resultMap.put(treeId, ruleValue);
+        }
+        return resultMap;
     }
 }

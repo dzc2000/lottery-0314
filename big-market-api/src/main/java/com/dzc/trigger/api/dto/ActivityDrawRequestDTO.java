@@ -3,11 +3,16 @@ package com.dzc.trigger.api.dto;
 import lombok.Data;
 
 @Data
-public class RaffleAwardListRequestDTO {
+public class ActivityDrawRequestDTO {
 
-    // 用户ID
+    /**
+     * 用户ID
+     */
     private String userId;
-    // 抽奖活动ID
+
+    /**
+     * 活动ID
+     */
     private Long activityId;
 
 }
