@@ -1,0 +1,1595 @@
+24-07-31.14:31:44.006 [main            ] INFO  LogicTreeTest          - Starting LogicTreeTest using Java 17.0.10 on dongzhichengdeMacBook-Air.local with PID 23299 (started by dongzhicheng in /Users/dongzhicheng/Desktop/Project/big-market/big-market-app)
+24-07-31.14:31:44.007 [main            ] INFO  LogicTreeTest          - The following 1 profile is active: "dev"
+24-07-31.14:31:44.574 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-31.14:31:44.575 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-31.14:31:44.595 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+24-07-31.14:31:45.145 [main            ] INFO  Version                - Redisson 3.26.0
+24-07-31.14:31:45.164 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-31.14:31:45.257 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-07-31.14:31:45.268 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-07-31.14:31:46.401 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-31.14:31:46.464 [main            ] INFO  ConsumerConfig         - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-raffle-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = raffle-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+24-07-31.14:31:46.560 [main            ] INFO  AppInfoParser          - Kafka version: 3.1.2
+24-07-31.14:31:46.560 [main            ] INFO  AppInfoParser          - Kafka commitId: f8c67dc3ae0a3265
+24-07-31.14:31:46.560 [main            ] INFO  AppInfoParser          - Kafka startTimeMs: 1722407506559
+24-07-31.14:31:46.569 [main            ] INFO  KafkaConsumer          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Subscribed to topic(s): activity_sku_stock_zero
+24-07-31.14:31:46.574 [main            ] INFO  ConsumerConfig         - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-raffle-group-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = raffle-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+24-07-31.14:31:46.578 [main            ] INFO  AppInfoParser          - Kafka version: 3.1.2
+24-07-31.14:31:46.579 [main            ] INFO  AppInfoParser          - Kafka commitId: f8c67dc3ae0a3265
+24-07-31.14:31:46.579 [main            ] INFO  AppInfoParser          - Kafka startTimeMs: 1722407506578
+24-07-31.14:31:46.582 [main            ] INFO  KafkaConsumer          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Subscribed to topic(s): send_award
+24-07-31.14:31:46.593 [main            ] INFO  LogicTreeTest          - Started LogicTreeTest in 2.84 seconds (JVM running for 3.841)
+24-07-31.14:31:46.826 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metadata               - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Resetting the last seen epoch of partition send_award-0 to 0 since the associated topicId changed from null to Q17VyhiHSOOw5eibgG1l-Q
+24-07-31.14:31:46.826 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metadata               - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Resetting the last seen epoch of partition activity_sku_stock_zero-0 to 0 since the associated topicId changed from null to jqFwqYTlTxGdW4b6Nx-a3A
+24-07-31.14:31:46.828 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metadata               - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Cluster ID: rB2EuGLvQdi61OETC-XyQw
+24-07-31.14:31:46.828 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metadata               - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Cluster ID: rB2EuGLvQdi61OETC-XyQw
+24-07-31.14:31:46.855 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+24-07-31.14:31:46.855 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+24-07-31.14:31:46.864 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:dzc strategyId:100001 awardId:100
+24-07-31.14:31:46.881 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-07-31.14:31:47.173 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-07-31.14:31:47.207 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-07-31.14:31:47.224 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-07-31.14:31:47.228 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁【拦截】 userId:dzc strategyId:100001 awardId:100 raffleCount:0 userRaffleCount:0
+24-07-31.14:31:47.228 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】treeId:100000001 node:rule_lock code:0001
+24-07-31.14:31:47.228 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId:dzc strategyId:100001 awardId:100 ruleValue:1
+24-07-31.14:31:47.228 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId:dzc strategyId:100001 awardId:1 awardRuleValue:
+24-07-31.14:31:47.229 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【决策树规则；增加dall-e-3画图模型】treeId:100000001 node:rule_luck_award code:0001
+24-07-31.14:31:47.303 [main            ] INFO  LogicTreeTest          - 测试结果：{"awardId":1,"awardRuleValue":""}
+24-07-31.14:31:48.237 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] (Re-)joining group
+24-07-31.14:31:48.238 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] (Re-)joining group
+24-07-31.14:31:48.244 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Resetting generation due to: consumer pro-actively leaving the group
+24-07-31.14:31:48.244 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Resetting generation due to: consumer pro-actively leaving the group
+24-07-31.14:31:48.244 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Request joining group due to: consumer pro-actively leaving the group
+24-07-31.14:31:48.244 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Request joining group due to: consumer pro-actively leaving the group
+24-07-31.14:31:48.244 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  KafkaConsumer          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Unsubscribed all topics or patterns and assigned partitions
+24-07-31.14:31:48.244 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  KafkaConsumer          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Unsubscribed all topics or patterns and assigned partitions
+24-07-31.14:31:48.245 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Resetting generation due to: consumer pro-actively leaving the group
+24-07-31.14:31:48.245 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Request joining group due to: consumer pro-actively leaving the group
+24-07-31.14:31:48.245 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Resetting generation due to: consumer pro-actively leaving the group
+24-07-31.14:31:48.245 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Request joining group due to: consumer pro-actively leaving the group
+24-07-31.14:31:50.026 [pool-2-thread-1 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-07-31.14:31:50.066 [pool-2-thread-1 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-07-31.14:31:53.301 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Node 2147483646 disconnected.
+24-07-31.14:31:53.303 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 2147483646 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-31.14:31:53.306 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Group coordinator kafka:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: null.isDisconnected: true. Rediscovery will be attempted.
+24-07-31.14:31:53.307 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metrics                - Metrics scheduler closed
+24-07-31.14:31:53.307 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metrics                - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+24-07-31.14:31:53.307 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metrics                - Metrics reporters closed
+24-07-31.14:31:53.314 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  AppInfoParser          - App info kafka.consumer for consumer-raffle-group-1 unregistered
+24-07-31.14:31:53.316 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  KafkaMessageListenerContainer - raffle-group: Consumer stopped
+24-07-31.14:31:56.441 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Disconnecting from node 2147483646 due to socket connection setup timeout. The timeout value is 9552 ms.
+24-07-31.14:31:56.442 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Group coordinator kafka:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: null.isDisconnected: true. Rediscovery will be attempted.
+24-07-31.14:31:56.443 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metrics                - Metrics scheduler closed
+24-07-31.14:31:56.443 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metrics                - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+24-07-31.14:31:56.443 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metrics                - Metrics reporters closed
+24-07-31.14:31:56.445 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  AppInfoParser          - App info kafka.consumer for consumer-raffle-group-2 unregistered
+24-07-31.14:31:56.445 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  KafkaMessageListenerContainer - raffle-group: Consumer stopped
+24-07-31.14:31:59.732 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 17.0.10 on dongzhichengdeMacBook-Air.local with PID 23326 (started by dongzhicheng in /Users/dongzhicheng/Desktop/Project/big-market/big-market-app)
+24-07-31.14:31:59.733 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
+24-07-31.14:32:00.318 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-31.14:32:00.319 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-31.14:32:00.337 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+24-07-31.14:32:00.911 [main            ] INFO  Version                - Redisson 3.26.0
+24-07-31.14:32:00.931 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-31.14:32:01.018 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-07-31.14:32:01.028 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-07-31.14:32:02.150 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-31.14:32:02.218 [main            ] INFO  ConsumerConfig         - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-raffle-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = raffle-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+24-07-31.14:32:02.286 [main            ] INFO  AppInfoParser          - Kafka version: 3.1.2
+24-07-31.14:32:02.286 [main            ] INFO  AppInfoParser          - Kafka commitId: f8c67dc3ae0a3265
+24-07-31.14:32:02.286 [main            ] INFO  AppInfoParser          - Kafka startTimeMs: 1722407522286
+24-07-31.14:32:02.294 [main            ] INFO  KafkaConsumer          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Subscribed to topic(s): activity_sku_stock_zero
+24-07-31.14:32:02.299 [main            ] INFO  ConsumerConfig         - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-raffle-group-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = raffle-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+24-07-31.14:32:02.302 [main            ] INFO  AppInfoParser          - Kafka version: 3.1.2
+24-07-31.14:32:02.303 [main            ] INFO  AppInfoParser          - Kafka commitId: f8c67dc3ae0a3265
+24-07-31.14:32:02.303 [main            ] INFO  AppInfoParser          - Kafka startTimeMs: 1722407522302
+24-07-31.14:32:02.306 [main            ] INFO  KafkaConsumer          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Subscribed to topic(s): send_award
+24-07-31.14:32:02.317 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 2.882 seconds (JVM running for 3.868)
+24-07-31.14:32:02.556 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metadata               - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Resetting the last seen epoch of partition send_award-0 to 0 since the associated topicId changed from null to Q17VyhiHSOOw5eibgG1l-Q
+24-07-31.14:32:02.556 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metadata               - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Resetting the last seen epoch of partition activity_sku_stock_zero-0 to 0 since the associated topicId changed from null to jqFwqYTlTxGdW4b6Nx-a3A
+24-07-31.14:32:02.557 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metadata               - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Cluster ID: rB2EuGLvQdi61OETC-XyQw
+24-07-31.14:32:02.557 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metadata               - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Cluster ID: rB2EuGLvQdi61OETC-XyQw
+24-07-31.14:32:02.558 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+24-07-31.14:32:02.558 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+24-07-31.14:32:02.562 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] (Re-)joining group
+24-07-31.14:32:02.562 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] (Re-)joining group
+24-07-31.14:32:02.596 [main            ] INFO  RaffleActivityController - 活动抽奖 userId:dzc activityId:100301
+24-07-31.14:32:02.655 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-07-31.14:32:02.839 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-07-31.14:32:02.894 [main            ] INFO  RaffleActivityController - 活动抽奖，创建订单 userId:dzc activityId:100301 orderId:759529764391
+24-07-31.14:32:02.908 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: dzc strategyId: 100006 ruleModel: rule_default awardId: 107
+24-07-31.14:32:02.909 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 dzc 100006 107 rule_default
+24-07-31.14:32:02.909 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-07-31.14:32:02.926 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-07-31.14:32:02.969 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:dzc strategyId:100006 awardId:107
+24-07-31.14:32:02.974 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁【放行】 userId:dzc strategyId:100006 awardId:107 raffleCount:3 userRaffleCount:3
+24-07-31.14:32:02.974 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock_1 node:rule_lock code:0000
+24-07-31.14:32:02.974 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:dzc strategyId:100006 awardId:107
+24-07-31.14:32:02.976 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:dzc strategyId:100006 awardId:107
+24-07-31.14:32:02.992 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock_1 node:rule_stock code:0001
+24-07-31.14:32:02.992 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 dzc 100006 107 null
+24-07-31.14:32:03.114 [main            ] INFO  ProducerConfig         - Idempotence will be disabled because acks is set to 1, not set to 'all'.
+24-07-31.14:32:03.114 [main            ] INFO  ProducerConfig         - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 1
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+24-07-31.14:32:03.133 [main            ] INFO  AppInfoParser          - Kafka version: 3.1.2
+24-07-31.14:32:03.133 [main            ] INFO  AppInfoParser          - Kafka commitId: f8c67dc3ae0a3265
+24-07-31.14:32:03.134 [main            ] INFO  AppInfoParser          - Kafka startTimeMs: 1722407523133
+24-07-31.14:32:03.140 [kafka-producer-network-thread | producer-1] INFO  Metadata               - [Producer clientId=producer-1] Resetting the last seen epoch of partition send_award-0 to 0 since the associated topicId changed from null to Q17VyhiHSOOw5eibgG1l-Q
+24-07-31.14:32:03.140 [kafka-producer-network-thread | producer-1] INFO  Metadata               - [Producer clientId=producer-1] Cluster ID: rB2EuGLvQdi61OETC-XyQw
+24-07-31.14:32:03.148 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"2等奖","userId":"dzc"},"id":"23603272394","timestamp":1722407522999}
+24-07-31.14:32:03.152 [main            ] INFO  RaffleActivityControllerTest - 请求参数：{"activityId":100301,"userId":"dzc"}
+24-07-31.14:32:03.155 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0000","data":{"awardId":107,"awardIndex":7,"awardTitle":"2等奖"},"info":"成功"}
+24-07-31.14:32:03.163 [main            ] INFO  RaffleActivityController - 活动装配，数据预热，开始 activityId:100301
+24-07-31.14:32:03.186 [main            ] INFO  RaffleActivityController - 活动装配，数据预热，完成 activityId:100301
+24-07-31.14:32:03.187 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0000","data":true,"info":"成功"}
+24-07-31.14:32:03.195 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Resetting generation due to: consumer pro-actively leaving the group
+24-07-31.14:32:03.195 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Resetting generation due to: consumer pro-actively leaving the group
+24-07-31.14:32:03.195 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Request joining group due to: consumer pro-actively leaving the group
+24-07-31.14:32:03.195 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Request joining group due to: consumer pro-actively leaving the group
+24-07-31.14:32:03.195 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  KafkaConsumer          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Unsubscribed all topics or patterns and assigned partitions
+24-07-31.14:32:03.195 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  KafkaConsumer          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Unsubscribed all topics or patterns and assigned partitions
+24-07-31.14:32:03.197 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Resetting generation due to: consumer pro-actively leaving the group
+24-07-31.14:32:03.197 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Request joining group due to: consumer pro-actively leaving the group
+24-07-31.14:32:03.197 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Resetting generation due to: consumer pro-actively leaving the group
+24-07-31.14:32:03.198 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Request joining group due to: consumer pro-actively leaving the group
+24-07-31.14:32:05.020 [pool-2-thread-1 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-07-31.14:32:05.038 [pool-2-thread-1 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-07-31.14:32:09.559 [main            ] INFO  RaffleStrategyControllerTest - Starting RaffleStrategyControllerTest using Java 17.0.10 on dongzhichengdeMacBook-Air.local with PID 23334 (started by dongzhicheng in /Users/dongzhicheng/Desktop/Project/big-market/big-market-app)
+24-07-31.14:32:09.559 [main            ] INFO  RaffleStrategyControllerTest - The following 1 profile is active: "dev"
+24-07-31.14:32:10.038 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存 strategyId:100006 awardId:107
+24-07-31.14:32:10.150 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-31.14:32:10.152 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-31.14:32:10.173 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+24-07-31.14:32:10.798 [main            ] INFO  Version                - Redisson 3.26.0
+24-07-31.14:32:10.820 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-31.14:32:10.911 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-07-31.14:32:10.920 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-07-31.14:32:11.809 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Disconnecting from node 2147483646 due to socket connection setup timeout. The timeout value is 9191 ms.
+24-07-31.14:32:11.812 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Group coordinator kafka:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: null.isDisconnected: true. Rediscovery will be attempted.
+24-07-31.14:32:11.813 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metrics                - Metrics scheduler closed
+24-07-31.14:32:11.813 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metrics                - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+24-07-31.14:32:11.813 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metrics                - Metrics reporters closed
+24-07-31.14:32:11.822 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  AppInfoParser          - App info kafka.consumer for consumer-raffle-group-1 unregistered
+24-07-31.14:32:11.823 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  KafkaMessageListenerContainer - raffle-group: Consumer stopped
+24-07-31.14:32:12.096 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-31.14:32:12.110 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Disconnecting from node 2147483646 due to socket connection setup timeout. The timeout value is 9457 ms.
+24-07-31.14:32:12.111 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Group coordinator kafka:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: null.isDisconnected: true. Rediscovery will be attempted.
+24-07-31.14:32:12.111 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metrics                - Metrics scheduler closed
+24-07-31.14:32:12.111 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metrics                - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+24-07-31.14:32:12.111 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metrics                - Metrics reporters closed
+24-07-31.14:32:12.113 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  AppInfoParser          - App info kafka.consumer for consumer-raffle-group-2 unregistered
+24-07-31.14:32:12.113 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  KafkaMessageListenerContainer - raffle-group: Consumer stopped
+24-07-31.14:32:12.121 [SpringApplicationShutdownHook] INFO  KafkaProducer          - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+24-07-31.14:32:12.166 [main            ] INFO  ConsumerConfig         - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-raffle-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = raffle-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+24-07-31.14:32:12.222 [main            ] INFO  AppInfoParser          - Kafka version: 3.1.2
+24-07-31.14:32:12.222 [main            ] INFO  AppInfoParser          - Kafka commitId: f8c67dc3ae0a3265
+24-07-31.14:32:12.222 [main            ] INFO  AppInfoParser          - Kafka startTimeMs: 1722407532222
+24-07-31.14:32:12.231 [main            ] INFO  KafkaConsumer          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Subscribed to topic(s): activity_sku_stock_zero
+24-07-31.14:32:12.235 [main            ] INFO  ConsumerConfig         - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-raffle-group-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = raffle-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+24-07-31.14:32:12.237 [main            ] INFO  AppInfoParser          - Kafka version: 3.1.2
+24-07-31.14:32:12.238 [main            ] INFO  AppInfoParser          - Kafka commitId: f8c67dc3ae0a3265
+24-07-31.14:32:12.238 [main            ] INFO  AppInfoParser          - Kafka startTimeMs: 1722407532237
+24-07-31.14:32:12.240 [main            ] INFO  KafkaConsumer          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Subscribed to topic(s): send_award
+24-07-31.14:32:12.251 [main            ] INFO  RaffleStrategyControllerTest - Started RaffleStrategyControllerTest in 2.927 seconds (JVM running for 3.601)
+24-07-31.14:32:12.425 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metadata               - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Resetting the last seen epoch of partition activity_sku_stock_zero-0 to 0 since the associated topicId changed from null to jqFwqYTlTxGdW4b6Nx-a3A
+24-07-31.14:32:12.426 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metadata               - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Resetting the last seen epoch of partition send_award-0 to 0 since the associated topicId changed from null to Q17VyhiHSOOw5eibgG1l-Q
+24-07-31.14:32:12.427 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metadata               - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Cluster ID: rB2EuGLvQdi61OETC-XyQw
+24-07-31.14:32:12.427 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metadata               - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Cluster ID: rB2EuGLvQdi61OETC-XyQw
+24-07-31.14:32:12.427 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+24-07-31.14:32:12.427 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+24-07-31.14:32:12.431 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] (Re-)joining group
+24-07-31.14:32:12.431 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] (Re-)joining group
+24-07-31.14:32:12.466 [main            ] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:dzc activityId：100301
+24-07-31.14:32:12.481 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-07-31.14:32:12.684 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-07-31.14:32:12.744 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-07-31.14:32:12.763 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-07-31.14:32:12.847 [main            ] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:dzc activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","isAwardUnlock":true,"waitUnLockCount":0},{"awardId":102,"awardTitle":"7等奖","isAwardUnlock":true,"waitUnLockCount":0},{"awardId":103,"awardTitle":"6等奖","isAwardUnlock":true,"waitUnLockCount":0},{"awardId":104,"awardTitle":"5等奖","isAwardUnlock":true,"waitUnLockCount":0},{"awardId":105,"awardTitle":"4等奖","isAwardUnlock":true,"waitUnLockCount":0},{"awardId":106,"awardSubtitle":"抽奖1次后解锁","awardTitle":"3等奖","isAwardUnlock":true,"waitUnLockCount":0},{"awardId":107,"awardSubtitle":"抽奖1次后解锁","awardTitle":"2等奖","isAwardUnlock":true,"waitUnLockCount":0},{"awardId":108,"awardSubtitle":"抽奖2次后解锁","awardTitle":"1等奖","isAwardUnlock":true,"waitUnLockCount":0}],"info":"成功"}
+24-07-31.14:32:12.849 [main            ] INFO  RaffleStrategyControllerTest - 请求参数：{"activityId":100301,"userId":"dzc"}
+24-07-31.14:32:12.849 [main            ] INFO  RaffleStrategyControllerTest - 测试结果：{"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","isAwardUnlock":true,"waitUnLockCount":0},{"awardId":102,"awardTitle":"7等奖","isAwardUnlock":true,"waitUnLockCount":0},{"awardId":103,"awardTitle":"6等奖","isAwardUnlock":true,"waitUnLockCount":0},{"awardId":104,"awardTitle":"5等奖","isAwardUnlock":true,"waitUnLockCount":0},{"awardId":105,"awardTitle":"4等奖","isAwardUnlock":true,"waitUnLockCount":0},{"awardId":106,"awardSubtitle":"抽奖1次后解锁","awardTitle":"3等奖","isAwardUnlock":true,"waitUnLockCount":0},{"awardId":107,"awardSubtitle":"抽奖1次后解锁","awardTitle":"2等奖","isAwardUnlock":true,"waitUnLockCount":0},{"awardId":108,"awardSubtitle":"抽奖2次后解锁","awardTitle":"1等奖","isAwardUnlock":true,"waitUnLockCount":0}],"info":"成功"}
+24-07-31.14:32:12.859 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Resetting generation due to: consumer pro-actively leaving the group
+24-07-31.14:32:12.859 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Request joining group due to: consumer pro-actively leaving the group
+24-07-31.14:32:12.859 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Resetting generation due to: consumer pro-actively leaving the group
+24-07-31.14:32:12.859 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Request joining group due to: consumer pro-actively leaving the group
+24-07-31.14:32:12.859 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  KafkaConsumer          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Unsubscribed all topics or patterns and assigned partitions
+24-07-31.14:32:12.859 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  KafkaConsumer          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Unsubscribed all topics or patterns and assigned partitions
+24-07-31.14:32:12.859 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Resetting generation due to: consumer pro-actively leaving the group
+24-07-31.14:32:12.859 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Resetting generation due to: consumer pro-actively leaving the group
+24-07-31.14:32:12.859 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Request joining group due to: consumer pro-actively leaving the group
+24-07-31.14:32:12.859 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Request joining group due to: consumer pro-actively leaving the group
+24-07-31.14:32:13.266 [kafka-producer-network-thread | producer-1] INFO  NetworkClient          - [Producer clientId=producer-1] Node 1 disconnected.
+24-07-31.14:32:13.266 [kafka-producer-network-thread | producer-1] WARN  NetworkClient          - [Producer clientId=producer-1] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-31.14:32:15.037 [pool-2-thread-1 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-07-31.14:32:15.058 [pool-2-thread-1 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-07-31.14:32:21.268 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Disconnecting from node 2147483646 due to socket connection setup timeout. The timeout value is 8826 ms.
+24-07-31.14:32:21.274 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Group coordinator kafka:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: null.isDisconnected: true. Rediscovery will be attempted.
+24-07-31.14:32:21.276 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metrics                - Metrics scheduler closed
+24-07-31.14:32:21.276 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metrics                - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+24-07-31.14:32:21.276 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metrics                - Metrics reporters closed
+24-07-31.14:32:21.297 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  AppInfoParser          - App info kafka.consumer for consumer-raffle-group-2 unregistered
+24-07-31.14:32:21.298 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  KafkaMessageListenerContainer - raffle-group: Consumer stopped
+24-07-31.14:32:23.898 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Disconnecting from node 2147483646 due to socket connection setup timeout. The timeout value is 11436 ms.
+24-07-31.14:32:23.899 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Group coordinator kafka:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: null.isDisconnected: true. Rediscovery will be attempted.
+24-07-31.14:32:23.901 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metrics                - Metrics scheduler closed
+24-07-31.14:32:23.901 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metrics                - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+24-07-31.14:32:23.901 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metrics                - Metrics reporters closed
+24-07-31.14:32:23.905 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  AppInfoParser          - App info kafka.consumer for consumer-raffle-group-1 unregistered
+24-07-31.14:32:23.906 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  KafkaMessageListenerContainer - raffle-group: Consumer stopped
+24-07-31.14:32:24.457 [kafka-producer-network-thread | producer-1] INFO  NetworkClient          - [Producer clientId=producer-1] Node 1 disconnected.
+24-07-31.14:32:24.458 [kafka-producer-network-thread | producer-1] WARN  NetworkClient          - [Producer clientId=producer-1] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-31.14:32:29.601 [kafka-producer-network-thread | producer-1] INFO  NetworkClient          - [Producer clientId=producer-1] Node 1 disconnected.
+24-07-31.14:32:29.602 [kafka-producer-network-thread | producer-1] WARN  NetworkClient          - [Producer clientId=producer-1] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-31.22:09:42.951 [main            ] INFO  BehaviorRebateServiceTest - Starting BehaviorRebateServiceTest using Java 17.0.10 on dongzhichengdeMacBook-Air.local with PID 33482 (started by dongzhicheng in /Users/dongzhicheng/Desktop/Project/big-market/big-market-app)
+24-07-31.22:09:42.954 [main            ] INFO  BehaviorRebateServiceTest - The following 1 profile is active: "dev"
+24-07-31.22:09:43.807 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-31.22:09:43.809 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-31.22:09:43.836 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+24-07-31.22:09:44.625 [main            ] INFO  Version                - Redisson 3.26.0
+24-07-31.22:09:44.658 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-31.22:09:44.807 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-07-31.22:09:44.821 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-07-31.22:09:46.571 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-31.22:09:46.655 [main            ] INFO  ConsumerConfig         - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-raffle-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = raffle-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+24-07-31.22:09:46.747 [main            ] INFO  AppInfoParser          - Kafka version: 3.1.2
+24-07-31.22:09:46.747 [main            ] INFO  AppInfoParser          - Kafka commitId: f8c67dc3ae0a3265
+24-07-31.22:09:46.747 [main            ] INFO  AppInfoParser          - Kafka startTimeMs: 1722434986746
+24-07-31.22:09:46.759 [main            ] INFO  KafkaConsumer          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Subscribed to topic(s): activity_sku_stock_zero
+24-07-31.22:09:46.765 [main            ] INFO  ConsumerConfig         - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-raffle-group-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = raffle-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+24-07-31.22:09:46.771 [main            ] INFO  AppInfoParser          - Kafka version: 3.1.2
+24-07-31.22:09:46.771 [main            ] INFO  AppInfoParser          - Kafka commitId: f8c67dc3ae0a3265
+24-07-31.22:09:46.771 [main            ] INFO  AppInfoParser          - Kafka startTimeMs: 1722434986771
+24-07-31.22:09:46.775 [main            ] INFO  KafkaConsumer          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Subscribed to topic(s): send_award
+24-07-31.22:09:46.795 [main            ] INFO  BehaviorRebateServiceTest - Started BehaviorRebateServiceTest in 4.319 seconds (JVM running for 5.762)
+24-07-31.22:09:47.287 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metadata               - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Resetting the last seen epoch of partition activity_sku_stock_zero-0 to 0 since the associated topicId changed from null to jqFwqYTlTxGdW4b6Nx-a3A
+24-07-31.22:09:47.288 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metadata               - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Resetting the last seen epoch of partition send_award-0 to 0 since the associated topicId changed from null to Q17VyhiHSOOw5eibgG1l-Q
+24-07-31.22:09:47.292 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metadata               - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Cluster ID: rB2EuGLvQdi61OETC-XyQw
+24-07-31.22:09:47.292 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metadata               - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Cluster ID: rB2EuGLvQdi61OETC-XyQw
+24-07-31.22:09:47.318 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+24-07-31.22:09:47.318 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+24-07-31.22:09:47.397 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-07-31.22:09:47.532 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] (Re-)joining group
+24-07-31.22:09:47.532 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] (Re-)joining group
+24-07-31.22:09:47.776 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-07-31.22:09:47.831 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-07-31.22:09:47.857 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-07-31.22:09:47.963 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Resetting generation due to: consumer pro-actively leaving the group
+24-07-31.22:09:47.963 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Request joining group due to: consumer pro-actively leaving the group
+24-07-31.22:09:47.963 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  KafkaConsumer          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Unsubscribed all topics or patterns and assigned partitions
+24-07-31.22:09:47.963 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Resetting generation due to: consumer pro-actively leaving the group
+24-07-31.22:09:47.963 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Request joining group due to: consumer pro-actively leaving the group
+24-07-31.22:09:47.963 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  KafkaConsumer          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Unsubscribed all topics or patterns and assigned partitions
+24-07-31.22:09:47.966 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Resetting generation due to: consumer pro-actively leaving the group
+24-07-31.22:09:47.966 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Request joining group due to: consumer pro-actively leaving the group
+24-07-31.22:09:47.966 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Resetting generation due to: consumer pro-actively leaving the group
+24-07-31.22:09:47.966 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Request joining group due to: consumer pro-actively leaving the group
+24-07-31.22:09:50.024 [scheduling-1    ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-07-31.22:09:50.063 [scheduling-1    ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-07-31.22:09:52.537 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Node 2147483646 disconnected.
+24-07-31.22:09:52.538 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 2147483646 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-31.22:09:52.539 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Group coordinator kafka:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: null.isDisconnected: true. Rediscovery will be attempted.
+24-07-31.22:09:52.541 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metrics                - Metrics scheduler closed
+24-07-31.22:09:52.541 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metrics                - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+24-07-31.22:09:52.541 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metrics                - Metrics reporters closed
+24-07-31.22:09:52.551 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  AppInfoParser          - App info kafka.consumer for consumer-raffle-group-2 unregistered
+24-07-31.22:09:52.553 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  KafkaMessageListenerContainer - raffle-group: Consumer stopped
+24-07-31.22:09:56.879 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Disconnecting from node 2147483646 due to socket connection setup timeout. The timeout value is 9489 ms.
+24-07-31.22:09:56.881 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Group coordinator kafka:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: null.isDisconnected: true. Rediscovery will be attempted.
+24-07-31.22:09:56.883 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metrics                - Metrics scheduler closed
+24-07-31.22:09:56.883 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metrics                - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+24-07-31.22:09:56.884 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metrics                - Metrics reporters closed
+24-07-31.22:09:56.903 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  AppInfoParser          - App info kafka.consumer for consumer-raffle-group-1 unregistered
+24-07-31.22:09:56.903 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  KafkaMessageListenerContainer - raffle-group: Consumer stopped
+24-07-31.22:16:47.028 [main            ] INFO  BehaviorRebateServiceTest - Starting BehaviorRebateServiceTest using Java 17.0.10 on dongzhichengdeMacBook-Air.local with PID 33631 (started by dongzhicheng in /Users/dongzhicheng/Desktop/Project/big-market/big-market-app)
+24-07-31.22:16:47.030 [main            ] INFO  BehaviorRebateServiceTest - The following 1 profile is active: "dev"
+24-07-31.22:16:47.980 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-31.22:16:47.983 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-31.22:16:48.009 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+24-07-31.22:16:48.867 [main            ] INFO  Version                - Redisson 3.26.0
+24-07-31.22:16:48.937 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-31.22:16:49.186 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-07-31.22:16:49.201 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-07-31.22:16:50.864 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-31.22:16:50.960 [main            ] INFO  ConsumerConfig         - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-raffle-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = raffle-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+24-07-31.22:16:51.045 [main            ] INFO  AppInfoParser          - Kafka version: 3.1.2
+24-07-31.22:16:51.045 [main            ] INFO  AppInfoParser          - Kafka commitId: f8c67dc3ae0a3265
+24-07-31.22:16:51.045 [main            ] INFO  AppInfoParser          - Kafka startTimeMs: 1722435411044
+24-07-31.22:16:51.056 [main            ] INFO  KafkaConsumer          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Subscribed to topic(s): activity_sku_stock_zero
+24-07-31.22:16:51.062 [main            ] INFO  ConsumerConfig         - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-raffle-group-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = raffle-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+24-07-31.22:16:51.068 [main            ] INFO  AppInfoParser          - Kafka version: 3.1.2
+24-07-31.22:16:51.069 [main            ] INFO  AppInfoParser          - Kafka commitId: f8c67dc3ae0a3265
+24-07-31.22:16:51.069 [main            ] INFO  AppInfoParser          - Kafka startTimeMs: 1722435411068
+24-07-31.22:16:51.076 [main            ] INFO  KafkaConsumer          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Subscribed to topic(s): send_award
+24-07-31.22:16:51.110 [main            ] INFO  BehaviorRebateServiceTest - Started BehaviorRebateServiceTest in 4.569 seconds (JVM running for 5.834)
+24-07-31.22:16:51.791 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metadata               - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Resetting the last seen epoch of partition send_award-0 to 0 since the associated topicId changed from null to Q17VyhiHSOOw5eibgG1l-Q
+24-07-31.22:16:51.792 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metadata               - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Resetting the last seen epoch of partition activity_sku_stock_zero-0 to 0 since the associated topicId changed from null to jqFwqYTlTxGdW4b6Nx-a3A
+24-07-31.22:16:51.795 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metadata               - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Cluster ID: rB2EuGLvQdi61OETC-XyQw
+24-07-31.22:16:51.795 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metadata               - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Cluster ID: rB2EuGLvQdi61OETC-XyQw
+24-07-31.22:16:51.797 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+24-07-31.22:16:51.797 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+24-07-31.22:16:51.806 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] (Re-)joining group
+24-07-31.22:16:51.807 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] (Re-)joining group
+24-07-31.22:16:51.872 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-07-31.22:16:52.214 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-07-31.22:16:52.243 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-07-31.22:16:52.266 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-07-31.22:16:52.338 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Resetting generation due to: consumer pro-actively leaving the group
+24-07-31.22:16:52.338 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Resetting generation due to: consumer pro-actively leaving the group
+24-07-31.22:16:52.338 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Request joining group due to: consumer pro-actively leaving the group
+24-07-31.22:16:52.338 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  KafkaConsumer          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Unsubscribed all topics or patterns and assigned partitions
+24-07-31.22:16:52.338 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Request joining group due to: consumer pro-actively leaving the group
+24-07-31.22:16:52.338 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  KafkaConsumer          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Unsubscribed all topics or patterns and assigned partitions
+24-07-31.22:16:52.340 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Resetting generation due to: consumer pro-actively leaving the group
+24-07-31.22:16:52.340 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Request joining group due to: consumer pro-actively leaving the group
+24-07-31.22:16:52.340 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Resetting generation due to: consumer pro-actively leaving the group
+24-07-31.22:16:52.340 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Request joining group due to: consumer pro-actively leaving the group
+24-07-31.22:16:55.056 [scheduling-1    ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-07-31.22:16:55.070 [scheduling-1    ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-07-31.22:16:56.842 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Node 2147483646 disconnected.
+24-07-31.22:16:56.844 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 2147483646 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-31.22:16:56.845 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Group coordinator kafka:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: null.isDisconnected: true. Rediscovery will be attempted.
+24-07-31.22:16:56.847 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metrics                - Metrics scheduler closed
+24-07-31.22:16:56.847 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metrics                - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+24-07-31.22:16:56.847 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metrics                - Metrics reporters closed
+24-07-31.22:16:56.856 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  AppInfoParser          - App info kafka.consumer for consumer-raffle-group-1 unregistered
+24-07-31.22:16:56.857 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  KafkaMessageListenerContainer - raffle-group: Consumer stopped
+24-07-31.22:17:02.875 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Disconnecting from node 2147483646 due to socket connection setup timeout. The timeout value is 11047 ms.
+24-07-31.22:17:02.877 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Group coordinator kafka:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: null.isDisconnected: true. Rediscovery will be attempted.
+24-07-31.22:17:02.879 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metrics                - Metrics scheduler closed
+24-07-31.22:17:02.880 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metrics                - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+24-07-31.22:17:02.880 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metrics                - Metrics reporters closed
+24-07-31.22:17:02.885 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  AppInfoParser          - App info kafka.consumer for consumer-raffle-group-2 unregistered
+24-07-31.22:17:02.885 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  KafkaMessageListenerContainer - raffle-group: Consumer stopped
+24-07-31.22:19:34.416 [main            ] INFO  BehaviorRebateServiceTest - Starting BehaviorRebateServiceTest using Java 17.0.10 on dongzhichengdeMacBook-Air.local with PID 33697 (started by dongzhicheng in /Users/dongzhicheng/Desktop/Project/big-market/big-market-app)
+24-07-31.22:19:34.417 [main            ] INFO  BehaviorRebateServiceTest - The following 1 profile is active: "dev"
+24-07-31.22:19:35.261 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-07-31.22:19:35.263 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-07-31.22:19:35.289 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+24-07-31.22:19:36.895 [main            ] INFO  Version                - Redisson 3.26.0
+24-07-31.22:19:36.949 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-07-31.22:19:37.236 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-07-31.22:19:37.260 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-07-31.22:19:40.248 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-07-31.22:19:40.379 [main            ] INFO  ConsumerConfig         - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-raffle-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = raffle-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+24-07-31.22:19:40.571 [main            ] INFO  AppInfoParser          - Kafka version: 3.1.2
+24-07-31.22:19:40.571 [main            ] INFO  AppInfoParser          - Kafka commitId: f8c67dc3ae0a3265
+24-07-31.22:19:40.571 [main            ] INFO  AppInfoParser          - Kafka startTimeMs: 1722435580569
+24-07-31.22:19:40.593 [main            ] INFO  KafkaConsumer          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Subscribed to topic(s): activity_sku_stock_zero
+24-07-31.22:19:40.614 [main            ] INFO  ConsumerConfig         - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-raffle-group-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = raffle-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+24-07-31.22:19:40.618 [main            ] INFO  AppInfoParser          - Kafka version: 3.1.2
+24-07-31.22:19:40.618 [main            ] INFO  AppInfoParser          - Kafka commitId: f8c67dc3ae0a3265
+24-07-31.22:19:40.618 [main            ] INFO  AppInfoParser          - Kafka startTimeMs: 1722435580618
+24-07-31.22:19:40.622 [main            ] INFO  KafkaConsumer          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Subscribed to topic(s): send_award
+24-07-31.22:19:40.647 [main            ] INFO  BehaviorRebateServiceTest - Started BehaviorRebateServiceTest in 6.648 seconds (JVM running for 7.826)
+24-07-31.22:19:41.240 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metadata               - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Resetting the last seen epoch of partition activity_sku_stock_zero-0 to 0 since the associated topicId changed from null to jqFwqYTlTxGdW4b6Nx-a3A
+24-07-31.22:19:41.240 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metadata               - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Resetting the last seen epoch of partition send_award-0 to 0 since the associated topicId changed from null to Q17VyhiHSOOw5eibgG1l-Q
+24-07-31.22:19:41.247 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metadata               - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Cluster ID: rB2EuGLvQdi61OETC-XyQw
+24-07-31.22:19:41.247 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metadata               - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Cluster ID: rB2EuGLvQdi61OETC-XyQw
+24-07-31.22:19:41.249 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+24-07-31.22:19:41.249 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+24-07-31.22:19:41.264 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] (Re-)joining group
+24-07-31.22:19:41.265 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] (Re-)joining group
+24-07-31.22:19:41.425 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-07-31.22:19:42.067 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-07-31.22:20:19.491 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Node 2147483646 disconnected.
+24-07-31.22:20:19.492 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Node 2147483646 disconnected.
+24-07-31.22:20:19.499 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 2147483646 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-31.22:20:19.503 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 2147483646 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-31.22:20:19.592 [scheduling-1    ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-07-31.22:20:19.593 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Group coordinator kafka:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: null.isDisconnected: true. Rediscovery will be attempted.
+24-07-31.22:20:19.594 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Group coordinator kafka:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: null.isDisconnected: true. Rediscovery will be attempted.
+24-07-31.22:20:21.687 [scheduling-1    ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-07-31.22:20:22.034 [scheduling-1    ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-07-31.22:20:22.054 [scheduling-1    ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-07-31.22:20:28.277 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Node 1 disconnected.
+24-07-31.22:20:39.103 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-07-31.22:20:39.106 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Disconnecting from node 1 due to socket connection setup timeout. The timeout value is 10723 ms.
+24-07-31.22:20:39.106 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=51s164ms).
+24-07-31.22:20:42.665 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Resetting generation due to: consumer pro-actively leaving the group
+24-07-31.22:20:42.665 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Resetting generation due to: consumer pro-actively leaving the group
+24-07-31.22:20:42.665 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Request joining group due to: consumer pro-actively leaving the group
+24-07-31.22:20:42.665 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Request joining group due to: consumer pro-actively leaving the group
+24-07-31.22:20:42.666 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  KafkaConsumer          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Unsubscribed all topics or patterns and assigned partitions
+24-07-31.22:20:42.666 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  KafkaConsumer          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Unsubscribed all topics or patterns and assigned partitions
+24-07-31.22:20:42.667 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Resetting generation due to: consumer pro-actively leaving the group
+24-07-31.22:20:42.667 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Resetting generation due to: consumer pro-actively leaving the group
+24-07-31.22:20:42.667 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Request joining group due to: consumer pro-actively leaving the group
+24-07-31.22:20:42.667 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  ConsumerCoordinator    - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Request joining group due to: consumer pro-actively leaving the group
+24-07-31.22:20:42.670 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metrics                - Metrics scheduler closed
+24-07-31.22:20:42.670 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metrics                - Metrics scheduler closed
+24-07-31.22:20:42.670 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metrics                - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+24-07-31.22:20:42.670 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metrics                - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+24-07-31.22:20:42.670 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  Metrics                - Metrics reporters closed
+24-07-31.22:20:42.671 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  Metrics                - Metrics reporters closed
+24-07-31.22:20:42.689 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  AppInfoParser          - App info kafka.consumer for consumer-raffle-group-1 unregistered
+24-07-31.22:20:42.690 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  KafkaMessageListenerContainer - raffle-group: Consumer stopped
+24-07-31.22:20:42.690 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  AppInfoParser          - App info kafka.consumer for consumer-raffle-group-2 unregistered
+24-07-31.22:20:42.691 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  KafkaMessageListenerContainer - raffle-group: Consumer stopped

@@ -1,0 +1,237 @@
+24-08-02.11:30:01.996 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-08-02.11:30:21.432 [kafka-producer-network-thread | producer-1] WARN  NetworkClient          - [Producer clientId=producer-1] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-08-02.11:30:26.591 [kafka-producer-network-thread | producer-1] WARN  NetworkClient          - [Producer clientId=producer-1] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-08-02.11:30:31.823 [kafka-producer-network-thread | producer-1] WARN  NetworkClient          - [Producer clientId=producer-1] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-08-02.11:30:37.310 [kafka-producer-network-thread | producer-1] WARN  NetworkClient          - [Producer clientId=producer-1] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-08-02.11:30:43.252 [kafka-producer-network-thread | producer-1] WARN  NetworkClient          - [Producer clientId=producer-1] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-08-02.11:30:44.805 [kafka-producer-network-thread | producer-1] ERROR LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='{"data":{"bizId":"dzc_sku_2024080105","rebateConfig":"9011","rebateType":"sku","userId":"dzc"},"id":...' to topic send_rebate:
+org.apache.kafka.common.KafkaException: Producer is closed forcefully.
+	at org.apache.kafka.clients.producer.internals.RecordAccumulator.abortBatches(RecordAccumulator.java:760)
+	at org.apache.kafka.clients.producer.internals.RecordAccumulator.abortIncompleteBatches(RecordAccumulator.java:747)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:283)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+24-08-02.11:30:44.807 [kafka-producer-network-thread | producer-1] ERROR LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='{"data":{"bizId":"dzc_integral_2024080105","rebateConfig":"10","rebateType":"integral","userId":"dzc...' to topic send_rebate:
+org.apache.kafka.common.KafkaException: Producer is closed forcefully.
+	at org.apache.kafka.clients.producer.internals.RecordAccumulator.abortBatches(RecordAccumulator.java:760)
+	at org.apache.kafka.clients.producer.internals.RecordAccumulator.abortIncompleteBatches(RecordAccumulator.java:747)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:283)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+24-08-02.13:13:47.889 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-08-02.13:13:50.359 [main            ] ERROR BehaviorRebateRepository - 写入返利记录，唯一索引冲突 userId: dzc
+org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'dzc_sku_2024080105' for key 'user_behavior_rebate_order_000.uq_biz_id'
+### The error may exist in file [/Users/dongzhicheng/Desktop/Project/big-market/big-market-app/target/classes/mybatis/mapper/user_behavior_rebate_order_mapper.xml]
+### The error may involve com.dzc.infrastructure.persistent.dao.IUserBehaviorRebateOrderDao.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into user_behavior_rebate_order_000(         user_id, order_id, behavior_type, rebate_desc, rebate_type, rebate_config, biz_id, create_time, update_time         ) values(         ?, ?, ?, ?, ?, ?, ?, now(), now()         )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'dzc_sku_2024080105' for key 'user_behavior_rebate_order_000.uq_biz_id'
+; Duplicate entry 'dzc_sku_2024080105' for key 'user_behavior_rebate_order_000.uq_biz_id'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'dzc_sku_2024080105' for key 'user_behavior_rebate_order_000.uq_biz_id'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:247)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at jdk.proxy2/jdk.proxy2.$Proxy112.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy142.insert(Unknown Source)
+	at com.dzc.infrastructure.persistent.repository.BehaviorRebateRepository.lambda$saveUserRebateRecord$0(BehaviorRebateRepository.java:77)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at com.dzc.infrastructure.persistent.repository.BehaviorRebateRepository.saveUserRebateRecord(BehaviorRebateRepository.java:64)
+	at com.dzc.domain.rebate.service.BehaviorRebateService.createOrder(BehaviorRebateService.java:81)
+	at com.dzc.test.domain.rebate.BehaviorRebateServiceTest.test_createOrder(BehaviorRebateServiceTest.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'dzc_sku_2024080105' for key 'user_behavior_rebate_order_000.uq_biz_id'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at jdk.proxy2/jdk.proxy2.$Proxy214.update(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 45 common frames omitted
+24-08-02.13:14:03.629 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-08-02.13:14:37.833 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-08-02.13:14:37.833 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-3, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-08-02.13:14:37.834 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-1, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-08-02.13:14:48.052 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-08-02.13:14:48.054 [kafka-producer-network-thread | producer-1] WARN  NetworkClient          - [Producer clientId=producer-1] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-08-02.13:14:53.368 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-3, groupId=raffle-group] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-08-02.13:14:55.953 [scheduling-1    ] ERROR EventPublisher         - 发送MQ消息失败 topic:send_rebate message:{"data":{"bizId":"xiaofuge_sku_20240802","rebateConfig":"9011","rebateType":"sku","userId":"xiaofuge"},"id":"24967332342","timestamp":1722575645795}
+org.apache.kafka.common.errors.InterruptException: java.lang.InterruptedException
+	at org.apache.kafka.clients.producer.KafkaProducer.doSend(KafkaProducer.java:1030)
+	at org.apache.kafka.clients.producer.KafkaProducer.send(KafkaProducer.java:914)
+	at org.springframework.kafka.core.DefaultKafkaProducerFactory$CloseSafeProducer.send(DefaultKafkaProducerFactory.java:1087)
+	at org.springframework.kafka.core.KafkaTemplate.doSend(KafkaTemplate.java:655)
+	at org.springframework.kafka.core.KafkaTemplate.send(KafkaTemplate.java:403)
+	at com.dzc.infrastructure.event.EventPublisher.publish(EventPublisher.java:31)
+	at com.dzc.infrastructure.persistent.repository.TaskRepository.sendMessage(TaskRepository.java:39)
+	at com.dzc.infrastructure.persistent.repository.TaskRepository$$FastClassBySpringCGLIB$$63670079.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.dzc.infrastructure.persistent.repository.TaskRepository$$EnhancerBySpringCGLIB$$b0bb83e4.sendMessage(<generated>)
+	at com.dzc.domain.task.service.TaskService.sendMessage(TaskService.java:23)
+	at com.dzc.trigger.job.SendMessageTaskJob.exec_db01(SendMessageTaskJob.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.InterruptedException: null
+	at java.base/java.lang.Object.wait(Native Method)
+	at org.apache.kafka.common.utils.SystemTime.waitObject(SystemTime.java:55)
+	at org.apache.kafka.clients.producer.internals.ProducerMetadata.awaitUpdate(ProducerMetadata.java:119)
+	at org.apache.kafka.clients.producer.KafkaProducer.waitOnMetadata(KafkaProducer.java:1088)
+	at org.apache.kafka.clients.producer.KafkaProducer.doSend(KafkaProducer.java:935)
+	... 32 common frames omitted
+24-08-02.13:14:55.957 [scheduling-1    ] ERROR SendMessageTaskJob     - 定时任务，发送MQ消息失败 userId: xiaofuge topic: send_rebate
+24-08-02.13:14:55.959 [main            ] ERROR EventPublisher         - 发送MQ消息失败 topic:send_rebate message:{"data":{"bizId":"xiaofuge_sku_20240802","rebateConfig":"9011","rebateType":"sku","userId":"xiaofuge"},"id":"24967332342","timestamp":1722575645795}
+org.apache.kafka.common.KafkaException: Producer closed while send in progress
+	at org.apache.kafka.clients.producer.KafkaProducer.doSend(KafkaProducer.java:938)
+	at org.apache.kafka.clients.producer.KafkaProducer.send(KafkaProducer.java:914)
+	at org.springframework.kafka.core.DefaultKafkaProducerFactory$CloseSafeProducer.send(DefaultKafkaProducerFactory.java:1087)
+	at org.springframework.kafka.core.KafkaTemplate.doSend(KafkaTemplate.java:655)
+	at org.springframework.kafka.core.KafkaTemplate.send(KafkaTemplate.java:403)
+	at com.dzc.infrastructure.event.EventPublisher.publish(EventPublisher.java:21)
+	at com.dzc.infrastructure.persistent.repository.BehaviorRebateRepository.saveUserRebateRecord(BehaviorRebateRepository.java:108)
+	at com.dzc.domain.rebate.service.BehaviorRebateService.createOrder(BehaviorRebateService.java:81)
+	at com.dzc.trigger.http.RaffleActivityController.calendarSignRebate(RaffleActivityController.java:183)
+	at com.dzc.test.trigger.RaffleActivityControllerTest.test_calendarSignRebate(RaffleActivityControllerTest.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.apache.kafka.common.KafkaException: Requested metadata update after close
+	at org.apache.kafka.clients.producer.internals.ProducerMetadata.awaitUpdate(ProducerMetadata.java:126)
+	at org.apache.kafka.clients.producer.KafkaProducer.waitOnMetadata(KafkaProducer.java:1088)
+	at org.apache.kafka.clients.producer.KafkaProducer.doSend(KafkaProducer.java:935)
+	... 42 common frames omitted
+24-08-02.13:14:55.960 [main            ] ERROR BehaviorRebateRepository - 写入返利记录，发送MQ消息失败 userId: xiaofuge topic: null
+24-08-02.13:15:02.765 [main            ] WARN  DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+24-08-02.13:15:15.062 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-2, groupId=raffle-group] Connection to node 2147483646 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-08-02.13:15:15.069 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] WARN  NetworkClient          - [Consumer clientId=consumer-raffle-group-3, groupId=raffle-group] Connection to node 2147483646 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-08-02.13:15:20.467 [kafka-producer-network-thread | producer-1] WARN  NetworkClient          - [Producer clientId=producer-1] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-08-02.13:15:25.630 [kafka-producer-network-thread | producer-1] WARN  NetworkClient          - [Producer clientId=producer-1] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-08-02.13:15:30.988 [kafka-producer-network-thread | producer-1] WARN  NetworkClient          - [Producer clientId=producer-1] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-08-02.13:15:36.382 [kafka-producer-network-thread | producer-1] WARN  NetworkClient          - [Producer clientId=producer-1] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-08-02.13:15:42.207 [kafka-producer-network-thread | producer-1] WARN  NetworkClient          - [Producer clientId=producer-1] Connection to node 1 (kafka/10.89.68.210:9092) could not be established. Broker may not be available.
+24-08-02.13:15:45.126 [kafka-producer-network-thread | producer-1] ERROR LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='{"data":{"bizId":"dzc_sku_20240802","rebateConfig":"9011","rebateType":"sku","userId":"dzc"},"id":"2...' to topic send_rebate:
+org.apache.kafka.common.KafkaException: Producer is closed forcefully.
+	at org.apache.kafka.clients.producer.internals.RecordAccumulator.abortBatches(RecordAccumulator.java:760)
+	at org.apache.kafka.clients.producer.internals.RecordAccumulator.abortIncompleteBatches(RecordAccumulator.java:747)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:283)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+24-08-02.13:15:45.131 [kafka-producer-network-thread | producer-1] ERROR LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='{"data":{"bizId":"xiaofuge_integral_20240802","rebateConfig":"10","rebateType":"integral","userId":"...' to topic send_rebate:
+org.apache.kafka.common.KafkaException: Producer is closed forcefully.
+	at org.apache.kafka.clients.producer.internals.RecordAccumulator.abortBatches(RecordAccumulator.java:760)
+	at org.apache.kafka.clients.producer.internals.RecordAccumulator.abortIncompleteBatches(RecordAccumulator.java:747)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:283)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+24-08-02.13:15:45.132 [kafka-producer-network-thread | producer-1] ERROR LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='{"data":{"bizId":"dzc_integral_20240802","rebateConfig":"10","rebateType":"integral","userId":"dzc"}...' to topic send_rebate:
+org.apache.kafka.common.KafkaException: Producer is closed forcefully.
+	at org.apache.kafka.clients.producer.internals.RecordAccumulator.abortBatches(RecordAccumulator.java:760)
+	at org.apache.kafka.clients.producer.internals.RecordAccumulator.abortIncompleteBatches(RecordAccumulator.java:747)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:283)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+24-08-02.13:15:45.132 [kafka-producer-network-thread | producer-1] ERROR LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='{"data":{"bizId":"xiaofuge_sku_20240802","rebateConfig":"9011","rebateType":"sku","userId":"xiaofuge...' to topic send_rebate:
+org.apache.kafka.common.KafkaException: Producer is closed forcefully.
+	at org.apache.kafka.clients.producer.internals.RecordAccumulator.abortBatches(RecordAccumulator.java:760)
+	at org.apache.kafka.clients.producer.internals.RecordAccumulator.abortIncompleteBatches(RecordAccumulator.java:747)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:283)
+	at java.base/java.lang.Thread.run(Thread.java:842)
