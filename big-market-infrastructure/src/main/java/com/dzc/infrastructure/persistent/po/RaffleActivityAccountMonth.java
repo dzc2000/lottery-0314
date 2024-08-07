@@ -13,10 +13,10 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class RaffleActivityAccountMonth {
-    private final SimpleDateFormat dateFormatMonth = new SimpleDateFormat("yyyy-MM");
+    private final static SimpleDateFormat dateFormatMonth = new SimpleDateFormat("yyyy-MM");
 
     /** 自增ID */
-    private String id;
+    private Long id;
     /** 用户ID */
     private String userId;
     /** 活动ID */
@@ -32,9 +32,10 @@ public class RaffleActivityAccountMonth {
     /** 更新时间 */
     private Date updateTime;
 
-    public String currentMonth() {
+    public static String currentMonth() {
         return dateFormatMonth.format(new Date());
     }
+
 
 
 }

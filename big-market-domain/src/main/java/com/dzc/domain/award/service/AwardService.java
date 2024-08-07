@@ -2,15 +2,20 @@ package com.dzc.domain.award.service;
 
 import com.dzc.domain.award.event.SendAwardMessageEvent;
 import com.dzc.domain.award.model.aggregate.UserAwardRecordAggregate;
+import com.dzc.domain.award.model.entity.DistributeAwardEntity;
 import com.dzc.domain.award.model.entity.TaskEntity;
 import com.dzc.domain.award.model.entity.UserAwardRecordEntity;
 import com.dzc.domain.award.model.valobj.TaskStateVO;
 import com.dzc.domain.award.repository.IAwardRepository;
+import com.dzc.domain.award.service.distribute.IDistributeAward;
 import com.dzc.types.event.BaseEvent;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.Map;
 
+@Slf4j
 @Service
 public class AwardService implements IAwardService {
 
@@ -18,6 +23,14 @@ public class AwardService implements IAwardService {
     private IAwardRepository awardRepository;
     @Resource
     private SendAwardMessageEvent sendAwardMessageEvent;
+
+    private final Map<String, IDistributeAward> distributeAwardMap;
+
+    public AwardService(IAwardRepository awardRepository, SendAwardMessageEvent sendAwardMessageEvent, Map<String, IDistributeAward> distributeAwardMap) {
+        this.awardRepository = awardRepository;
+        this.sendAwardMessageEvent = sendAwardMessageEvent;
+        this.distributeAwardMap = distributeAwardMap;
+    }
 
     @Override
     public void saveUserAwardRecord(UserAwardRecordEntity userAwardRecordEntity) {
@@ -45,6 +58,28 @@ public class AwardService implements IAwardService {
 
         // 存储聚合对象 - 一个事务下，用户的中奖记录
         awardRepository.saveUserAwardRecord(userAwardRecordAggregate);
+    }
+
+    @Override
+    public void distributeAward(DistributeAwardEntity distributeAwardEntity) {
+        // 奖品Key
+        String awardKey = awardRepository.queryAwardKey(distributeAwardEntity.getAwardId());
+        if (null == awardKey) {
+            log.error("分发奖品，奖品ID不存在。awardKey:{}", awardKey);
+            return;
+        }
+
+        // 奖品服务
+        IDistributeAward distributeAward = distributeAwardMap.get(awardKey);
+
+        if (null == distributeAward) {
+            log.error("分发奖品，对应的服务不存在。awardKey:{}", awardKey);
+            throw new RuntimeException("分发奖品，奖品" + awardKey + "对应的服务不存在");
+        }
+
+        // 发放奖品
+        distributeAward.giveOutPrizes(distributeAwardEntity);
+
     }
 
 }
