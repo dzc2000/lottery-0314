@@ -38,11 +38,13 @@ public abstract class AbstractRaffleActivityPartake implements IRaffleActivityPa
         Long activityId = partakeRaffleActivityEntity.getActivityId();
         Date currentDate = new Date();
 
+        log.info("创建活动抽奖单开始 userId:{} activityId:{}", userId, activityId);
         // 1. 活动查询
         ActivityEntity activityEntity = activityRepository.queryRaffleActivityByActivityId(activityId);
 
         // 校验；活动状态
         if (!ActivityStateVO.open.equals(activityEntity.getState())) {
+            log.error("创建活动抽奖单失败，活动状态未开启 activityId:{} state:{}", activityId, activityEntity.getState());
             throw new AppException(ResponseCode.ACTIVITY_STATE_ERROR.getCode(), ResponseCode.ACTIVITY_STATE_ERROR.getInfo());
         }
         // 校验；活动日期「开始时间 <- 当前时间 -> 结束时间」
@@ -69,7 +71,7 @@ public abstract class AbstractRaffleActivityPartake implements IRaffleActivityPa
         // 6. 保存聚合对象 - 一个领域内的一个聚合是一个事务操作
         activityRepository.saveCreatePartakeOrderAggregate(createPartakeOrderAggregate);
 
-        // 7. 返回订单信息
+        log.info("创建活动抽奖单完成 userId:{} activityId:{} orderId:{}", userId, activityId, userRaffleOrder.getOrderId());        // 7. 返回订单信息
         return userRaffleOrder;
     }
 

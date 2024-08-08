@@ -1,6 +1,7 @@
 package com.dzc.infrastructure.persistent.dao;
 
 import com.dzc.infrastructure.persistent.po.RaffleActivity;
+import com.dzc.infrastructure.persistent.po.RaffleActivityAccount;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper

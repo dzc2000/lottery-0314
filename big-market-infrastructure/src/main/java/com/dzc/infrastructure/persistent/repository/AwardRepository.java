@@ -15,14 +15,18 @@ import com.dzc.infrastructure.persistent.po.Task;
 import com.dzc.infrastructure.persistent.po.UserAwardRecord;
 import com.dzc.infrastructure.persistent.po.UserCreditAccount;
 import com.dzc.infrastructure.persistent.po.UserRaffleOrder;
+import com.dzc.infrastructure.persistent.redis.IRedisService;
+import com.dzc.types.common.Constants;
 import com.dzc.types.enums.ResponseCode;
 import com.dzc.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
+import org.redisson.api.RLock;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.support.TransactionTemplate;
 
 import javax.annotation.Resource;
+import java.util.concurrent.TimeUnit;
 
 @Slf4j
 @Component
@@ -39,6 +43,8 @@ public class AwardRepository implements IAwardRepository {
     private IUserRaffleOrderDao userRaffleOrderDao;
     @Resource
     private IDBRouterStrategy dbRouter;
+    @Resource
+    private IRedisService redisService;
     @Resource
     private TransactionTemplate transactionTemplate;
     @Resource
@@ -105,6 +111,7 @@ public class AwardRepository implements IAwardRepository {
             eventPublisher.publish(task.getTopic(), task.getMessage());
             // 更新数据库记录，task 任务表
             taskDao.updateTaskSendMessageCompleted(task);
+            log.info("写入中奖记录，发送MQ消息完成 userId: {} orderId:{} topic: {}", userId, userAwardRecordEntity.getOrderId(), task.getTopic());
         } catch (Exception e) {
             log.error("写入中奖记录，发送MQ消息失败 userId: {} topic: {}", userId, task.getTopic());
             taskDao.updateTaskSendMessageFail(task);
@@ -136,7 +143,9 @@ public class AwardRepository implements IAwardRepository {
         userCreditAccountReq.setAvailableAmount(userCreditAwardEntity.getCreditAmount());
         userCreditAccountReq.setAccountStatus(AccountStatusVO.open.getCode());
 
+        RLock lock = redisService.getLock(Constants.RedisKey.ACTIVITY_ACCOUNT_LOCK + userId);
         try {
+            lock.lock(3, TimeUnit.SECONDS);
             dbRouter.doRouter(giveOutPrizesAggregate.getUserId());
             transactionTemplate.execute(status -> {
                 try {
@@ -146,12 +155,13 @@ public class AwardRepository implements IAwardRepository {
                         userCreditAccountDao.insert(userCreditAccountReq);
                     }
 
-                    // 更新奖品记录
-                    int updateAwardCount = userAwardRecordDao.updateAwardRecordCompletedState(userAwardRecordReq);
-                    if (0 == updateAwardCount) {
-                        log.warn("更新中奖记录，重复更新拦截 userId:{} giveOutPrizesAggregate:{}", userId, JSON.toJSONString(giveOutPrizesAggregate));
-                        status.setRollbackOnly();
+                    UserCreditAccount userCreditAccountRes = userCreditAccountDao.queryUserCreditAccount(userCreditAccountReq);
+                    if (null == userCreditAccountRes) {
+                        userCreditAccountDao.insert(userCreditAccountReq);
+                    } else {
+                        userCreditAccountDao.updateAddAmount(userCreditAccountReq);
                     }
+
                     return 1;
                 } catch (DuplicateKeyException e) {
                     status.setRollbackOnly();
@@ -161,6 +171,7 @@ public class AwardRepository implements IAwardRepository {
             });
         } finally {
             dbRouter.clear();
+            lock.unlock();
         }
 
     }
